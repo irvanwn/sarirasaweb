@@ -31,7 +31,7 @@ body {
     /* height: 3000px; */
 }
 #shownav{
-    top: 0px;
+    top: -80px;
     transition: top 0.3s ease;
 }
 .navbar{
@@ -83,9 +83,11 @@ body {
 
 /* top bar in image start */
 .container-satu{
-    position: relative;
+    position: relative; 
+    /* this causing navbar container 1 ilang */
 }
 .container-satu .nav_top{
+    position: absolute;
     height: 80px;
     display: flex;
     position: fixed;
@@ -133,8 +135,9 @@ body {
 }
 
 #overlaynav{
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    /* change position */
+    z-index: 3;
     top: 0; 
     color: #fff; 
     padding: 10px 20px; 
@@ -202,7 +205,6 @@ body {
 .container-dua{
     padding-top: 100px;
     display: unset;
-    display: block;
 }
 .container-dua h2{
     text-align: center;
@@ -237,6 +239,7 @@ body {
     text-align: center;
     position: static;
     margin-top: -120px;
+    background-color: #000000;
 
 }
 /*  */
@@ -442,18 +445,12 @@ body {
         margin-right: 100px; /*nav irght margin*/
     }
     .container-dua .icon-set{
-        width: 1024px;
+        width: 1000px;
         flex-direction: row;
 
     }
-    
-    .container-dua .icon-set img{
-        width: 100px;
-    }
-    .container-dua .carousell img{
-        height: 600px;
-        object-fit: cover;
-        /* filter: brightness(0.5); */
+    .container-dua .carousell{
+        width: 1000px;
     }
     
 }
@@ -479,14 +476,19 @@ body {
         margin-right: 50px; /*nav irght margin*/
     }
     .container-dua .icon-set{
-        width: 1080px;
+        width: 870px;
         flex-direction: row;
 
     }
     
     .container-dua .icon-set img{
-        width: 100px;
+        height: 55px;
+        width: 60px;
     }
+    .container-dua .carousell{
+        width: 870px;
+    }
+    
     
 }
 @media (max-width: 880px) {
@@ -498,7 +500,21 @@ body {
     .navbar .menu_full{
         margin-right: 20px; /*nav irght margin*/
     }
+    .container-dua .icon-set{
+        width: 750px;
+        flex-direction: row;
+        height: 400px;
+
+    }
     
+    .container-dua .icon-set img{
+        height: 35px;
+        width: 40px;
+    }
+    .container-dua .carousell{
+        width: 750px;
+        height: 280px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -659,6 +675,20 @@ body {
 }
 .menu__item:hover {
     background-color: #CFD8DC;
+}
+.container-dua .icon-set{
+    width: 460px;
+    flex-direction: row;
+
+}
+
+.container-dua .icon-set img{
+    height: 35px;
+    width: 40px;
+}
+.container-dua .carousell{
+    width: 460px;
+    height: 200px;
 }
 
 }
