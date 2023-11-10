@@ -91,13 +91,14 @@ $conn->close();
               <a href="#">Contact</a>
           </div>
       </div>
+      <div class="btn-centered">
+          <button class="btn-contact">Kontak Kami</button>
+        </div>
         <div class="bgimage">
             <img src="img/sari-rasa-mainbg-shadewhite.png" alt="bg-sarirasa">
             
         </div>
-        <div class="btn-centered">
-          <button class="btn-contact">Kontak Kami</button>
-        </div>
+
         
         <div class="srlogonama" id="overlaynamalogo"><img src="img/NamaLogo.png" alt=""></div>
         
