@@ -167,34 +167,28 @@ body {
     text-align: center;
     height: 100px;
 }
-
-#overlaybtn {
-    z-index: 2;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
+.container-satu .btn-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-satu .btn-contact {
-    background-color: var(--primary2);
+.container-satu .btn-centered .btn-contact {
+    background-color: var(--primary2); /* Green */
     border: none;
     color: white;
     padding: 18px 30px;
     text-align: center;
     text-decoration: none;
-    display: block;
     font-size: 16px;
     font-weight: 600;
-    margin: 100px auto 0 auto;
-    width: 250px;
-    height: 60px;
     border-radius: 50px;
     transition: all 0.4s;
+    width: 250px;
+    height: 60px;
 }
 
-.container-satu .btn-contact:hover {
+.container-satu .btn-centered .btn-contact:hover {
     cursor: pointer;
     width: 300px;
     height: 80px;
@@ -250,13 +244,14 @@ body {
     width: 1280px;
     margin: 100px auto 0px auto;
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
 }
 
 .container-dua .icon-set img{
-    width: 100px;
+    height: 80px;
 }
 
 

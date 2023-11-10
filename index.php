@@ -95,7 +95,10 @@ $conn->close();
             <img src="img/sari-rasa-mainbg-shadewhite.png" alt="bg-sarirasa">
             
         </div>
-        <button class="btn-contact" id="overlaybtn">Kontak Kami</button>
+        <div class="btn-centered">
+          <button class="btn-contact">Kontak Kami</button>
+        </div>
+        
         <div class="srlogonama" id="overlaynamalogo"><img src="img/NamaLogo.png" alt=""></div>
         
     </div>
@@ -148,19 +151,19 @@ $conn->close();
       
       <div class="icon-set">
         <div>
-          <img src="img/insta.png" alt="">
+          <img src="img/insta-300.png" alt="">
           <p>abcagwsrlbijkh</p>
         </div>
         <div>
-          <img src="img/email.png" alt="">
+          <img src="img/email-300.png" alt="">
           <p>abcagwsrlbijkh</p>
         </div>
         <div>
-          <img src="img/phone.png" alt="">
+          <img src="img/phone-300.png" alt="">
           <p>abcagwsrlbijkh</p>
         </div>
         <div>
-          <img src="img/home-phone.png" alt="">
+          <img src="img/home-phone-300.png" alt="">
           <p>abcagwsrlbijkh</p>
         </div>
       </div>
