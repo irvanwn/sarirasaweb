@@ -153,19 +153,20 @@ $conn->close();
       <div class="icon-set">
         <div>
           <img src="img/insta-300.png" alt="">
-          <p>abcagwsrlbijkh</p>
+          <p>rm_sarirasa_kendal</p>
         </div>
         <div>
           <img src="img/email-300.png" alt="">
-          <p>abcagwsrlbijkh</p>
+          <p>sarirasa098@gmail.com</p>
         </div>
         <div>
           <img src="img/phone-300.png" alt="">
-          <p>abcagwsrlbijkh</p>
+          <p>081 127 0606</p>
+          <p></p>
         </div>
         <div>
           <img src="img/home-phone-300.png" alt="">
-          <p>abcagwsrlbijkh</p>
+          <p>(0294) 641 888</p>
         </div>
       </div>
       
