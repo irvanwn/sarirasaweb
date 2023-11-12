@@ -253,10 +253,11 @@ body {
 }
 
 .container-dua .icon-set img{
-    height: 80px;
+    height: 60px;
 }
-
-
+.icon-email img{
+    height: 10px;
+}
 
 
 
@@ -400,6 +401,15 @@ body {
     text-align: center;
     display: flex;
 }
+
+
+
+
+/* container 4 */
+.container-empat{
+    height: 1000px;
+}
+
 
 @media (max-width: 1600px) {
     .container-tiga h1{

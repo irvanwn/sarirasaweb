@@ -152,12 +152,12 @@ $conn->close();
       
       <div class="icon-set">
         <div>
-          <img src="img/insta-300.png" alt="">
+          <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
           <p>rm_sarirasa_kendal</p>
         </div>
-        <div>
-          <img src="img/email-300.png" alt="">
-          <p>sarirasa098@gmail.com</p>
+        <div class="icon-email">
+          <a href=""><img src="img/email-300.png" alt=""></a>
+          <p>@sarirasa098@gmail.com</p>
         </div>
         <div>
           <img src="img/phone-300.png" alt="">
@@ -219,10 +219,16 @@ $conn->close();
             <h3>Headphone</h3>
             <p class="price">$29.99</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div> -->
-        </div>
-    </div>
+          </div> 
+        </div>-->
 
+
+      </div>
+
+      <div class="container-empat">
+
+
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
