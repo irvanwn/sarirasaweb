@@ -200,7 +200,6 @@ body {
     cursor: pointer;
     transform: scale(1.15);
 }
-
 /* container 2 - Fasilitas*/
 .container-dua{
     padding-top: 100px;
@@ -224,8 +223,7 @@ body {
 
 .container-dua .carousell{
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 .container-dua .carousell img{
     height: 640px;
