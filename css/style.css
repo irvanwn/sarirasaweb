@@ -255,6 +255,7 @@ body {
 
 .container-dua .icon-set img{
     height: 60px;
+    margin-bottom: 10px;
 }
 .icon-email img{
     height: 10px;
@@ -546,7 +547,7 @@ footer{
         transition: transform 0.3s ease;
     }
     .container-empat .box-parent{
-    width: 70%;
+        width: 70%;
     }
 }
 
@@ -621,7 +622,7 @@ footer{
         margin-right: auto;
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: 768px;
     }
     .container-empat .box-parent .child-2{
         width: 90%;
@@ -823,6 +824,9 @@ footer{
 .container-dua .carousell{
     width: 460px;
     height: 200px;
+}
+.container-empat .box-parent{
+    margin-top: 1200px;
 }
 
 }
