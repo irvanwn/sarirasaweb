@@ -7,13 +7,13 @@
     justify-content: center;
     margin: 0 auto;
 }
-.parent {
+.grandparent .parent {
     display: inline-block;
     border: 1px solid rgb(0, 60, 255);
     padding: 1rem 1rem;
     vertical-align: bottom;
 }
-.child {
+.grandparent .parent .child {
     display: inline-block;
     border: 1px solid red;
     padding: 20px;

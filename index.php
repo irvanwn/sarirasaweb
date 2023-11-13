@@ -158,7 +158,7 @@ $conn->close();
       </div>
 
       
-      <div class="icon-set">
+      <!-- <div class="icon-set">
         <div class="icon insta">
           <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
           <p>@rm_sarirasa_kendal</p>
@@ -176,31 +176,31 @@ $conn->close();
           <img src="img/home-phone-300.png" alt="">
           <p>(0294) 641 888</p>
         </div>
-      </div>
-
-      <!-- <div class="icon-set">
-        <div class="parent">
-          <div class="icon insta">
-            <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
-            <p>@rm_sarirasa_kendal</p>
-          </div>
-          <div class="icon email">
-            <a href=""><img src="img/email-300.png" alt=""></a>
-            <p>sarirasa098@gmail.com</p>
-          </div>
-        </div>
-        <div class="parent">
-          <div class="icon ph">
-            <img src="img/phone-300.png" alt="">
-            <p>081 127 0606</p>
-            <p></p>
-          </div>
-          <div class="icon homeph">
-            <img src="img/home-phone-300.png" alt="">
-            <p>(0294) 641 888</p>
-          </div>
-        </div>
       </div> -->
+
+      <div class="grandparent">
+        <div class='parent'>
+            <div class='child'>
+                <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
+                <p>@rm_sarirasa_kendal</p>
+            </div>
+            <div class='child'>
+                <a href=""><img src="img/email-300.png" alt=""></a>
+                <p>sarirasa098@gmail.com</p>
+            </div>
+        </div>
+        <div class='parent'>
+            <div class='child'>
+                <img src="img/phone-300.png" alt="">
+                <p>081 127 0606</p>
+            </div>
+            <div class='child'>
+                <img src="img/home-phone-300.png" alt="">
+                <p>(0294) 641 888</p>
+            </div>
+        </div>
+    </div>
+
       
     </div>
 
