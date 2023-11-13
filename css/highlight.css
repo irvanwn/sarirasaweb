@@ -77,6 +77,60 @@ body {
 
 /* end nav */
 
+.line-hl{
+    border-top: 2px solid red;
+    width: 50%;
+    margin: 0px auto;
+
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.child{
+    flex: 1;
+    /* border: 2px solid black; */
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+    height: 550px;
+    text-align: center;
+    overflow: hidden;
+    white-space: wrap;
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 5px;
+}
+.child .image-area img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.child .desc-area h3{
+    padding: 10px 10px 0 10px;
+}
+.child .desc-area p{
+    padding: 0px 20px 0 20px;
+    text-overflow: ellipsis;
+}
+
+.child:first-child {
+    margin-right: 80px;
+}
+
+
+
+
+
+@media (max-width: 1600px) {
+    .container{
+        width: 80%;
+    }
+}
+
 
 @media (max-width: 1280px) {
     .navbar .logo img{
@@ -85,6 +139,12 @@ body {
     }
     .navbar .menu_full{
         margin-right: 100px; /*nav irght margin*/
+    }
+    .child {
+        width: 100%; /* Display one item per row */
+    }
+    .container{
+        flex-direction: column;
     }
 }
 
@@ -97,6 +157,7 @@ body {
     .navbar .menu_full{
         margin-right: 50px; /*nav irght margin*/
     }
+
 }
 
 @media (max-width: 880px) {
@@ -258,4 +319,13 @@ body {
     .navbar .hamburger-menu{
         margin-left: 10px;
     }
+    .child{
+        height: 400px;
+    }
+    .child .image-area img{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
 }

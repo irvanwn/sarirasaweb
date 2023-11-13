@@ -1,3 +1,39 @@
+<?php
+$servername = "localhost"; // Change to your server name if needed
+$username = "root"; // Change to your database username
+$password = ""; // Change to your database password
+$dbname = "sarirasa"; // Change to your database name
+
+// Create a connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+  //$sql = "SELECT title, description, highlightimg FROM highlight WHERE id IN (6, 7, 8)";
+  $sql = "SELECT title, description, highlightimg, uploadDate, Active FROM highlight where Active=1 ORDER BY uploadDate desc LIMIT 10";
+
+$result = $conn->query($sql);
+
+$data = array(); // Initialize an array to store the retrieved data
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row; // Store each row in the data array
+    }
+} else {
+    // Handle the case where no data is found
+    $data[] = array(
+        "title" => "Title not found",
+        "description" => "Description not found",
+        "highlightimg" => "Image not found"
+    );
+}
+
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +83,24 @@
         <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
     </nav>
     <div class="container">
-        
-    </div>
+    <?php $count = 0; ?>
+    <?php foreach ($data as $item) { ?>
+        <div class="child">
+            <div class="image-area">
+                <img src="http://localhost/sarirasa/admin/postimages/<?php echo $item["highlightimg"]; ?>" alt="">
+            </div>
+            <div class="desc-area">
+                <h3><?php echo $item["title"]; ?></h3>
+                <div class="line-hl"></div>
+                <p><?php echo $item["description"]; ?></p>
+            </div>
+        </div>
+        <?php $count++; ?>
+        <?php if ($count % 2 === 0) { ?>
+            </div><div class="container">
+        <?php } ?>
+    <?php } ?>
+</div>
+
 </body>
 </html>
