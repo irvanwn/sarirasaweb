@@ -68,7 +68,7 @@ $conn->close();
         <div class="logo"><img src="img/logosr500.png" alt=""></div>
         <div class="namalogo"><img src="img/NamaLogo.png" alt=""></div>
         <div class="menu_full">
-            <a href="index.php">Home</a>
+            <a href="#home">Home</a>
             <a href="fasilitas.php">Fasilitas</a>
             <a href="highlight.php">Highlight</a>
             <a href="#contact">Contact</a>
@@ -80,10 +80,10 @@ $conn->close();
             <span></span>
             </label>
             <ul class="menu__box">
-                <li><a class="menu__item" href="index.php">Home</a></li>
+                <li><a class="menu__item" href="#home" onclick="closeMenu()">Home</a></li>
                 <li><a class="menu__item" href="fasilitas.php">Fasilitas</a></li>
                 <li><a class="menu__item" href="highlight.php">Highlight</a></li>
-                <li><a class="menu__item" href="#contact">Contact</a></li>
+                <li><a class="menu__item" href="#contact"onclick="closeMenu()">Contact</a></li>
             </ul>
         </div>
         <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
@@ -93,7 +93,7 @@ $conn->close();
       <div class="nav_top" id="overlaynav">
           <div class="logo"><img src="img/logosr500.png" alt=""></div>
           <div class="menu_top">
-              <a href="index.php">Home</a>
+              <a href="#home">Home</a>
               <a href="fasilitas.php">Fasilitas</a>
               <a href="highlight.php">Highlight</a>
               <a href="#contact">Contact</a>
@@ -200,8 +200,6 @@ $conn->close();
             </div>
         </div>
     </div>
-
-    <div class="editor"></div>
 
       
     </div>

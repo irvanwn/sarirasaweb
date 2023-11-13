@@ -15,3 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  function closeMenu() {
+    document.getElementById('menu__toggle').checked = false;
+}

@@ -30,6 +30,7 @@ div > a,div > a:hover {
 body {
     font-family: "Poppins", sans-serif;
     /* height: 3000px; */
+    transition: transform 0.9s ease;
 }
 .navbar{
     height: 80px;
@@ -103,6 +104,8 @@ body {
     width: 50%; 
     box-sizing: border-box;
     padding: 5px;
+    /* transition: transform 0.3s ease; */
+    
 }
 .child .image-area img{
     width: 100%;
@@ -121,7 +124,11 @@ body {
     margin-right: 80px;
 }
 
+.child:hover{
 
+    transform: unset;
+    /* scale(1.1) */
+}
 
 
 

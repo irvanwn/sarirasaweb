@@ -285,6 +285,9 @@ body {
     word-wrap: break-word;
     vertical-align: middle;
 }
+.container-dua .grandparent .parent .child p{
+    margin-top: 10px;
+}
 .container-dua .grandparent .parent .child img{
     height: 60px;
 }
@@ -884,21 +887,29 @@ footer{
 }
 }
 
+@media (max-width: 610px) {
+    .container-dua .grandparent .parent .child{
+        width: 200px;
+    }
+}
+
 @media (max-width: 480px) {
     html {
         font-size: 75%;
     }
     .navbar .hamburger-menu{
         margin-left: 0px;
-
-        
     }
-
+    .container-dua .grandparent .parent .child{
+        width: 160px;
+    }
 
 }
 
 @media (max-width: 320px) {
-
+    .container-dua .grandparent .parent .child{
+        width: 140px;
+    }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
