@@ -43,6 +43,7 @@ $conn->close();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restraunt</title>
+    <!-- js -->
     <script src="script.js"></script> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link
@@ -52,7 +53,14 @@ $conn->close();
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- icon footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- navbar main always stick hidden on top -->
@@ -226,9 +234,35 @@ $conn->close();
       </div>
 
       <div class="container-empat">
+          <div class="box-parent">
+            <div class="child-1">
+              <h2>Alamat Kami</h2>
+              <div class="line-h2"></div>
+              <p>Jalan Raya Semarang - Jakarta Km. 42,3 Jenarsari - Gemuh - Kendal. </p>
+              <p>Posisi di tepi Jalan Pantura (Nasional 1) </p>
+              <p>Luas Tanah 2,5 Hektare.</p>
+            </div>
 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31683.743059628916!2d110.08201522131031!3d-6.954004334926764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7042e2bff83f5b%3A0x9a813de02a5a15a!2sRumah%20Makan%20Sari%20Rasa%20Weleri%20Kendal!5e0!3m2!1sen!2sid!4v1699859070473!5m2!1sen!2sid" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="child-2"></iframe>
+
+          </div>
 
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+  <footer>
+      <div class="footer-content">
+          <div class="foot-logo"><img src="img/namalogo2.png" alt=""></div>
+          <p>We’re a diverse and passionate team that takes the restaurant business to the next level. We stay light on our feet and truly enjoy delivering great food and services.</p>
+          <ul class="socials">
+            <li><a href="#"><img src="img/ig.svg" alt="ig"></a></li>
+            <li><a href="#"><img src="img/maill.svg" alt="mail"></a></li>
+            <li><a href="#"><img src="img/phone.svg" alt="phone"></a></li>
+            <!-- (0294)641888 -->
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy;2023 RM Sari Rasa. All Rights Reserved.</p>
+      </div>
+  </footer>
 </html>

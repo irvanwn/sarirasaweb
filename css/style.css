@@ -13,7 +13,8 @@
     top: 0;
     text-decoration: none;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -117,7 +118,7 @@ body {
 }
 
 .container-satu .bgimage{
-    margin-top: -200px;
+    margin-top: -300px;
 }
 .container-satu .bgimage img{
     width: 100%;
@@ -175,7 +176,7 @@ body {
 }
 .container-satu .btn-centered{
     position: absolute;
-    top: 80%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -382,7 +383,8 @@ body {
 .info h3 {
 	margin: 15px 0 0px;
 	font-size: 30px;
-	font-weight: 400;
+	font-weight: 600;
+    letter-spacing: 0.5px;
 	text-transform: uppercase;
 	font-family: 'Bebas Neue', sans-serif;
 }
@@ -407,9 +409,113 @@ body {
 
 /* container 4 */
 .container-empat{
-    height: 1000px;
+    display: unset;
+    position: relative;
+    z-index: 2;
+}
+.container-empat .box-parent{
+    height: 400px;
+    width: 60%;
+    background-color: #ffffff;
+    margin: -100px auto 0 auto;
+    display: flex;
+    box-shadow: 0px 0px 100px 10px #969696;
+    flex-direction: row;
+}
+.container-empat .box-parent .child-1{
+    /* background-color: #E20D0D; */
+    /* width: 40%; */
+    flex: 4;
+    margin: 45px 80px 45px 40px;
+}
+.container-empat .box-parent .child-1 h2{
+    font-weight: 700;
+    font-size: 36px;
 }
 
+.container-empat .box-parent .child-1 .line-h2{
+    width: 25%;
+    margin: 10px 0 45px 0;
+    border: 2px solid #E20D0D;
+    align-items: center;
+}
+
+.container-empat .box-parent .child-2{
+    /* width: 60%; */
+    flex: 5;
+    margin: 30px 35px 30px 0px;
+} 
+.container-empat .box-parent .child-1 p{
+    font-size: 20px;
+    font-weight: 400;
+} 
+/* .container-empat .box-parent .child-1,
+.container-empat .box-parent .child-2{
+    margin: 30px;
+} */
+
+
+
+
+/* footer */
+footer{
+    margin-top: 100px;
+    position: unset;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #000000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content .foot-logo img{
+    height: 60px;
+}
+.footer-content p{
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 3px -55px;
+}
+.socials li{
+    margin: unset;
+    padding: 5px;
+    border: 1.5px solid rgb(117, 117, 117, 15%);
+    margin-left: 20px;
+    border-radius: 100px;
+}
+.socials a{
+    text-decoration: none;
+    color: #000000;
+}
+.footer-bottom{
+    background: #ffffff;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
 
 @media (max-width: 1600px) {
     .container-tiga h1{
@@ -439,6 +545,9 @@ body {
         object-fit: cover;
         transition: transform 0.3s ease;
     }
+    .container-empat .box-parent{
+    width: 70%;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -460,7 +569,17 @@ body {
     .container-dua .carousell{
         width: 1000px;
     }
+    .container-empat .box-parent .child-1 .line-h2{
+        margin: 10px 0 15px 0;
+    }
     
+}
+
+@media (max-width: 1200px) {
+    .container-empat .box-parent{
+        margin-top: 400px;
+    }
+
 }
 @media (max-width: 1024px) {
     .container-satu .bgimage{
@@ -496,6 +615,20 @@ body {
     .container-dua .carousell{
         width: 870px;
     }
+    .container-empat .box-parent{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+    .container-empat .box-parent .child-2{
+        width: 90%;
+        padding: 0 10px 0 10px;
+        margin: 0 auto 30px auto;
+    }
+
     
     
 }
@@ -527,19 +660,11 @@ body {
 
 @media (max-width: 768px) {
 .container-satu{
-    background-color: #FFCE00;
+    background-color: unset;
 }
 .navbar{
     height: 80px;
-    background-color: var(--primary1);
-    display: flex;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    z-index: 3;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+    position: sticky;
 }
 .namalogo {
     margin: 0;
@@ -569,6 +694,7 @@ body {
 
 #shownav{
     top: 0px;
+    /* position: sticky; */
 }
 
 .container-satu .logo , .navbar .logo{
@@ -592,7 +718,7 @@ body {
     height: 100%; 
 }
 .container-satu .bgimage{
-    margin-top: 80px    ;
+    margin-top: 0px;
 }
 .container-satu .menu_top{
     display: none;
