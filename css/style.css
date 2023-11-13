@@ -263,8 +263,8 @@ body {
 
 .container-dua .grandparent{
     /* border: 1px solid black; */
-    /* margin: 10px;
-    padding: 10px; */
+    /* margin: 10px;*/
+    padding-top: 100px; 
     text-align: center;
     display: flex;
     justify-content: center;
@@ -288,9 +288,9 @@ body {
 .container-dua .grandparent .parent .child img{
     height: 60px;
 }
-
-
-
+.container-dua .grandparent .parent .child:hover{
+    cursor: pointer;
+}
 /* container 3 - Fasilitas*/
 
 .container-tiga .info .hr-center{

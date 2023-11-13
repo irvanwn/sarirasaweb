@@ -62,10 +62,10 @@ $conn->close();
         <div class="logo"><img src="img/logosr500.png" alt=""></div>
         <div class="namalogo"><img src="img/NamaLogo.png" alt=""></div>
         <div class="menu_full">
-            <a href="#home">Home</a>
-            <a href="#Fasilitas">Fasilitas</a>
-            <a href="#highlight">Highlight</a>
-            <a href="#">Contact</a>
+            <a href="index.php">Home</a>
+            <a href="fasilitas.php">Fasilitas</a>
+            <a href="highlight.php">Highlight</a>
+            <a href="index.php#contact">Contact</a>
         </div>
         <!-- navbar-popup -->
         <div class="hamburger-menu">
@@ -74,10 +74,10 @@ $conn->close();
             <span></span>
             </label>
             <ul class="menu__box">
-                <li><a class="menu__item" href="#home">Home</a></li>
-                <li><a class="menu__item" href="#Fasilitas">Fasilitas</a></li>
-                <li><a class="menu__item" href="#highlight">Highlight</a></li>
-                <li><a class="menu__item" href="#">Contact</a></li>
+                <li><a class="menu__item" href="index.php">Home</a></li>
+                <li><a class="menu__item" href="fasilitas.php">Fasilitas</a></li>
+                <li><a class="menu__item" href="highlight.php">Highlight</a></li>
+                <li><a class="menu__item" href="index.php#contact">Contact</a></li>
             </ul>
         </div>
         <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>

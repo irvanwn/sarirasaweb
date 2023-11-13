@@ -68,10 +68,10 @@ $conn->close();
         <div class="logo"><img src="img/logosr500.png" alt=""></div>
         <div class="namalogo"><img src="img/NamaLogo.png" alt=""></div>
         <div class="menu_full">
-            <a href="#home">Home</a>
-            <a href="#Fasilitas">Fasilitas</a>
-            <a href="#highlight">Highlight</a>
-            <a href="#">Contact</a>
+            <a href="index.php">Home</a>
+            <a href="fasilitas.php">Fasilitas</a>
+            <a href="highlight.php">Highlight</a>
+            <a href="#contact">Contact</a>
         </div>
         <!-- navbar-popup -->
         <div class="hamburger-menu">
@@ -80,10 +80,10 @@ $conn->close();
             <span></span>
             </label>
             <ul class="menu__box">
-                <li><a class="menu__item" href="#home">Home</a></li>
-                <li><a class="menu__item" href="#Fasilitas">Fasilitas</a></li>
-                <li><a class="menu__item" href="#highlight">Highlight</a></li>
-                <li><a class="menu__item" href="#">Contact</a></li>
+                <li><a class="menu__item" href="index.php">Home</a></li>
+                <li><a class="menu__item" href="fasilitas.php">Fasilitas</a></li>
+                <li><a class="menu__item" href="highlight.php">Highlight</a></li>
+                <li><a class="menu__item" href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
@@ -93,10 +93,10 @@ $conn->close();
       <div class="nav_top" id="overlaynav">
           <div class="logo"><img src="img/logosr500.png" alt=""></div>
           <div class="menu_top">
-              <a href="#home">Home</a>
-              <a href="#Fasilitas">Fasilitas</a>
-              <a href="#highlight">Highlight</a>
-              <a href="#">Contact</a>
+              <a href="index.php">Home</a>
+              <a href="fasilitas.php">Fasilitas</a>
+              <a href="highlight.php">Highlight</a>
+              <a href="#contact">Contact</a>
           </div>
       </div>
       <div class="btn-centered">
@@ -178,7 +178,7 @@ $conn->close();
         </div>
       </div> -->
 
-      <div class="grandparent">
+      <div class="grandparent" id="contact">
         <div class='parent'>
             <div class='child'>
                 <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
@@ -189,8 +189,8 @@ $conn->close();
                 <p>sarirasa098@gmail.com</p>
             </div>
         </div>
-        <div class='parent'>
-            <div class='child'>
+        <div class='parent' >
+            <div class='child' id="phone">
                 <img src="img/phone-300.png" alt="">
                 <p>081 127 0606</p>
             </div>
@@ -200,6 +200,8 @@ $conn->close();
             </div>
         </div>
     </div>
+
+    <div class="editor"></div>
 
       
     </div>

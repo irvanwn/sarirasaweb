@@ -14,3 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("shownav").style.top = "-80px";
     }
   }
+
