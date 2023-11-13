@@ -516,6 +516,7 @@ footer{
     text-transform: capitalize;
 }
 
+
 @media (max-width: 1600px) {
     .container-tiga h1{
         text-align: center;
@@ -642,7 +643,6 @@ footer{
     }
     .container-dua .icon-set{
         width: 750px;
-        flex-direction: row;
         height: 400px;
 
     }
@@ -836,14 +836,6 @@ footer{
     margin-top: 1200px;
 }
 
-}
-
-@media (max-width: 600px) {
-    .container-dua .icon-set .icon{
-        max-width: 100px;
-        
-    }
-    
 }
 
 @media (max-width: 480px) {
