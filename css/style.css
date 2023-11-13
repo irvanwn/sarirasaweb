@@ -290,7 +290,7 @@ body {
 .container-tiga h1{
     text-align: center;
     margin-top: 100px;
-    font-weight: 800;
+    font-weight: 700;
     padding: 10px;
     border-bottom: 4px solid var(--primary2);
 
@@ -383,11 +383,9 @@ body {
 }
 .info h3 {
 	margin: 15px 0 0px;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 600;
-    letter-spacing: 0.5px;
 	text-transform: uppercase;
-	font-family: 'Bebas Neue', sans-serif;
 }
 .info .price {
 	margin: 0;
@@ -802,7 +800,6 @@ footer{
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -811,10 +808,17 @@ footer{
 .menu__item:hover {
     background-color: #CFD8DC;
 }
-.container-dua .icon-set{
-    width: 460px;
-    flex-direction: row;
 
+
+
+.container-dua .icon-set{
+    flex-direction: row;
+    word-wrap: break-word;
+    align-items: flex-start;
+}
+.container-dua .icon-set .icon{
+    max-width: 150px;
+    
 }
 
 .container-dua .icon-set img{
@@ -822,13 +826,24 @@ footer{
     width: 40px;
 }
 .container-dua .carousell{
-    width: 460px;
-    height: 200px;
+    width: 90%;
+    height: 350px;
+}
+.container-dua .carousell img{
+    height: 400px;
 }
 .container-empat .box-parent{
     margin-top: 1200px;
 }
 
+}
+
+@media (max-width: 600px) {
+    .container-dua .icon-set .icon{
+        max-width: 100px;
+        
+    }
+    
 }
 
 @media (max-width: 480px) {
