@@ -193,7 +193,7 @@ body {
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.4s;
-    width: 250px;
+    width: 220px;
     height: 60px;
 }
 
@@ -582,6 +582,9 @@ footer{
 }
 
 @media (max-width: 1280px) {
+    .container-satu .btn-centered{
+        top: 75%;
+    }
     .container-satu .bgimage{
         margin-top: -100px;
     }
@@ -613,6 +616,7 @@ footer{
     .container-empat .box-parent{
         margin-top: 400px;
     }
+
 
 }
 @media (max-width: 1024px) {
@@ -703,6 +707,13 @@ footer{
     
 .container-satu{
     background-color: unset;
+    margin-top: -100px;
+}
+.container-satu .btn-centered .btn-contact {
+    width: 180px;
+    height: 48px;
+    padding: 0;
+    font-size: 14px;
 }
 .navbar{
     height: 80px;
@@ -893,6 +904,16 @@ footer{
     }
 }
 
+@media (max-width: 576px){
+    .container-satu .btn-centered{
+        top: 80%;
+    }
+    .container-satu .btn-centered .btn-contact {
+        width: 130px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
 @media (max-width: 480px) {
     html {
         font-size: 75%;

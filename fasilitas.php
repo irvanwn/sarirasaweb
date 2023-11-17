@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="css/highlight.css" />
+    <link rel="stylesheet" href="css/fasilitas.css" />
     <!-- icon footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -46,8 +46,18 @@
         </div>
         <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
     </nav>
-    <div class="container">
-        
+    <div class="container-top">
+        <div class="fasilitas-1">
+            <div class="child-1">
+                <img src="img/IMG20230917114225.jpg" alt="">
+            </div>
+            <div class="child-2">
+                <div class="wrapped">
+                    <h1>Fasilitas Mushola</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

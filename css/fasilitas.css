@@ -77,6 +77,48 @@ body {
 
 /* end nav */
 
+.container-top{
+    margin-top: 100px;
+    height: 640px;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+}
+.container-top .fasilitas-1{
+    display: flex;
+    max-width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+}
+.container-top .fasilitas-1 .child-1{
+    /* border: 1px solid red; */
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container-top .fasilitas-1 .child-1 img{
+    overflow: hidden;
+    object-fit: cover;
+    height: 550px;
+    width: 550px;
+
+}
+.container-top .fasilitas-1 .child-2{
+    /* border: 1px solid red; */
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    padding: 100px auto;
+    width: 50%;
+}
+.container-top .fasilitas-1 .child-2 .wrapped{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
 @media (max-width: 1280px) {
     .navbar .logo img{
@@ -87,7 +129,9 @@ body {
         margin-right: 100px; /*nav irght margin*/
     }
 }
-
+@media (max-width: 1200px) {
+    
+}
 @media (max-width: 1024px) {
     /*navbar sticky on top adjust margin left & right*/
     .navbar .logo img{
