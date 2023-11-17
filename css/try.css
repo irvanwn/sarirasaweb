@@ -20,7 +20,7 @@
     margin: 0px;
     width: 80px;
     word-wrap: break-word;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .child img{
     height: 60px;
