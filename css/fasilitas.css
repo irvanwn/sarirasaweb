@@ -78,7 +78,7 @@ body {
 /* end nav */
 
 .container-top{
-    /* border: 1px solid red; */
+    /* border: 1px solid red;  */
     margin-top: 100px;
     height: 640px;
     width: 100%;
@@ -121,6 +121,9 @@ body {
     flex-direction: column;
 }
 
+.container-top .fasilitas-2{
+    display: none;
+}
 @media (max-width: 1280px) {
     .navbar .logo img{
         margin-left:100px; /*nav left margin*/
@@ -321,6 +324,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .container-top .fasilitas-1 .reversed{
+        flex-direction: column-reverse;
     }
     .container-top .fasilitas-1 .child-1,
     .container-top .fasilitas-1 .child-2{

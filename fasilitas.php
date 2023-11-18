@@ -58,6 +58,17 @@
                 </div>
             </div>
         </div>
+        <div class="fasilitas-2">
+            <div class="child-2">
+                <div class="wrapped">
+                    <h1>Fasilitas Mushola</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                </div>
+            </div>
+            <div class="child-1">
+                <img src="img/IMG20230917114225.jpg" alt="">
+            </div>
+        </div>
     </div>
 </body>
 </html>
