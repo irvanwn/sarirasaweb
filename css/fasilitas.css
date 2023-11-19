@@ -120,10 +120,46 @@ body {
     align-items: flex-start;
     flex-direction: column;
 }
+/* fasilitas 2 */
 
 .container-top .fasilitas-2{
-    display: none;
+    display: flex;
+    max-width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+    flex-direction: row;
 }
+.container-top .fasilitas-2 .child-1{
+    /* border: 1px solid red; */
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    align-items: center
+}
+.container-top .fasilitas-2 .child-1 img{
+    overflow: hidden;
+    object-fit: cover;
+    height: 550px;
+    width: 550px;
+
+}
+.container-top .fasilitas-2 .child-2{
+    /* border: 1px solid red; */
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    padding: 100px auto;
+    width: 50%;
+}
+.container-top .fasilitas-2 .child-2 .wrapped{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
 @media (max-width: 1280px) {
     .navbar .logo img{
         margin-left:100px; /*nav left margin*/
@@ -134,10 +170,12 @@ body {
     }
 }
 @media (max-width: 1200px) {
-    .container-top .fasilitas-1{
+    .container-top .fasilitas-1,
+    .container-top .fasilitas-2{
         max-width: 1024px;
     }
-    .container-top .fasilitas-1 .child-1 img{
+    .container-top .fasilitas-1 .child-1 img,
+    .container-top .fasilitas-2 .child-1 img{
         width: 100%;
     }
 }
@@ -150,19 +188,27 @@ body {
     .navbar .menu_full{
         margin-right: 50px; /*nav irght margin*/
     }
-    .container-top .fasilitas-1{
+    .container-top .fasilitas-1,
+    .container-top .fasilitas-2{
         max-width: 1024px;
     }
     .container-top .fasilitas-1 .child-1{
         justify-content: flex-end;
         align-content: stretch;
     }
-    .container-top .fasilitas-1 .child-2 .wrapped{
+    .container-top .fasilitas-1 .child-2 .wrapped,
+    .container-top .fasilitas-2 .child-2 .wrapped{
         justify-content: flex-start;
         width: 90%;
     }
-    .container-top .fasilitas-1 .child-1 img{
+    .container-top .fasilitas-1 .child-1 img,
+    .container-top .fasilitas-2 .child-1 img{
         width: 95%;
+    }
+    /* 2 */
+    .container-top .fasilitas-2 .child-1{
+        justify-content: flex-start;
+        align-content: stretch;
     }
 }
 
@@ -325,9 +371,6 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .container-top .fasilitas-1 .reversed{
-        flex-direction: column-reverse;
-    }
     .container-top .fasilitas-1 .child-1,
     .container-top .fasilitas-1 .child-2{
         width: 550px;
@@ -350,13 +393,46 @@ body {
         width: 550px;
     
     }
+    /* 2 */
+    .container-top .fasilitas-2{
+        margin-top: 210px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-top .fasilitas-2 .child-1,
+    .container-top .fasilitas-2 .child-2{
+        width: 550px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        max-width: none;
+    }
+    .container-top .fasilitas-2 .child-2 h1{
+        margin: 15px auto;
+    }
+    .container-top .fasilitas-2 .child-2 .wrapped{
+        width: 85%;
+    }
+    .container-top .fasilitas-2 .child-1 img{
+        overflow: hidden;
+        object-fit: cover;
+        height: 550px;
+        width: 550px;
+    
+    }
+
 }
 @media (max-width: 550px) {
     .container-top .fasilitas-1 .child-1,
-    .container-top .fasilitas-1 .child-2{
+    .container-top .fasilitas-1 .child-2,
+    .container-top .fasilitas-2 .child-1,
+    .container-top .fasilitas-2 .child-2{
         width: 100%;
     }
-    .container-top .fasilitas-1 .child-1 img{
+    .container-top .fasilitas-1 .child-1 img,
+    .container-top .fasilitas-2 .child-1 img{
         width: 98%;
     }   
 }
@@ -367,7 +443,11 @@ body {
     .navbar .hamburger-menu{
         margin-left: 10px;
     }
-    .container-top .fasilitas-1 .child-1 img{
+    .container-top .fasilitas-2{
+        margin-top: -20px;
+    }
+    .container-top .fasilitas-1 .child-1 img,
+    .container-top .fasilitas-2 .child-1 img{
         height: 400px;
     }
     .container-top{
