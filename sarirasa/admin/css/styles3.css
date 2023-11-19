@@ -1,0 +1,23 @@
+.redcolor{
+    color: #E00000 !important;
+}
+
+.hovercolor:hover, .hovercolor:focus, .hovercolor:active {
+    color: #FF0000 !important; /* Red color, you can use your theme's red color code */
+}
+
+.bgblack{
+    background-color: rgb(65, 65, 65) !important;
+}
+
+.hovercolor{
+    background-color: rgb(65, 65, 65) !important;
+}
+
+.hovercolor:hover{
+    background-color: rgb(83, 83, 83) !important;
+}
+
+.hovercolor:active{
+    background-color: rgb(255, 255, 255) !important;
+}

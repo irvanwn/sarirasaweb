@@ -125,21 +125,21 @@ $conn->close();
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="http://localhost/sarirasa/admin/postimages/IMG20230917120457.jpg" class="d-block w-100" alt="...">
+              <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/IMG20230917120457.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="http://localhost/sarirasa/admin/postimages/b60fcd9089e675fd4f67b091e5a931a0.jpg" class="d-block w-100" alt="...">
+              <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/b60fcd9089e675fd4f67b091e5a931a0.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">  
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="http://localhost/sarirasa/admin/postimages/b60fcd9089e675fd4f67b091e5a931a0.jpg" class="d-block w-100" alt="...">
+              <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/b60fcd9089e675fd4f67b091e5a931a0.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -213,7 +213,7 @@ $conn->close();
         <?php foreach ($data as $item) { ?>
         <div class="single-card">
           <div class="img-area">
-            <img src="http://localhost/sarirasa/admin/postimages/<?php echo $item["highlightimg"]; ?>" alt="images">
+            <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/<?php echo $item["highlightimg"]; ?>" alt="images">
             <div class="overlay">
               <button class="add-to-cart">Add to Cart</button>
               <button class="view-details">View Details</button>

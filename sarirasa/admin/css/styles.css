@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("assets/img/login_img.jpg");
+    background-color: gray;
+    /* background-color: pink; */
+}
+
+/* .cont{
+    background-color: pink;
+} */
+
+.loginform{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5% !important;
+    width: 350px;
+}
+
+.btn-primary{
+    width:100%;
+    border: none;
+    border-radius: 50px;
+    background: black;
+    font-size: 0.9rem !important;
+}
+
+.form-control{
+    box-shadow: none !important;
+    border: none;
+    color: rgba(0, 0, 0, 0.589);
+    border-bottom-color: rgba(0, 0, 0, 0.664);
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    font-size: 0.8rem !important;
+}
+
+.form-check-label{
+    color:rgb(146, 146, 146) !important;
+    font-size: 0.8rem !important;
+}
+
+h3{
+    color: #000000 !important;
+    font-size: 1.4rem !important;
+}
+
+.form-label{
+    color:rgb(136, 136, 136) !important;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.bottomtext{
+    color:rgb(136, 136, 136) !important;
+    font-size: 0.75rem !important;
+}
+
+@media (max-width:600px){
+    form{
+        width: 350px !important;
+    }
+}
+
+@media (min-width:601px) and (max-width:900px){
+    form{
+        width: 350px !important;
+    }
+}
+

@@ -87,7 +87,7 @@ $conn->close();
     <?php foreach ($data as $item) { ?>
         <div class="child">
             <div class="image-area">
-                <img src="http://localhost/sarirasa/admin/postimages/<?php echo $item["highlightimg"]; ?>" alt="">
+                <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/<?php echo $item["highlightimg"]; ?>" alt="">
             </div>
             <div class="desc-area">
                 <h3><?php echo $item["title"]; ?></h3>
