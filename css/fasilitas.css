@@ -79,12 +79,16 @@ body {
 
 .container-top{
     /* border: 1px solid red;  */
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 50px;
+}
+.container-top .bg-add{
+    background-color: rgb(240, 240, 240);
     height: 640px;
     width: 100%;
-    background-color: rgb(240, 240, 240);
 }
 .container-top .fasilitas-1{
+    /* border: 1px solid red; */
     display: flex;
     max-width: 1200px;
     height: 640px;
@@ -123,6 +127,7 @@ body {
 /* fasilitas 2 */
 
 .container-top .fasilitas-2{
+    /* border: 1px solid red; */
     display: flex;
     max-width: 1200px;
     height: 640px;
@@ -158,6 +163,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
 }
+
 
 
 @media (max-width: 1280px) {
@@ -362,14 +368,13 @@ body {
     .menu__item:hover {
         background-color: #CFD8DC;
     }
-    .container-top{
-        height: 850px;
-        padding-top: 100px;
-    }
+
+    
     .container-top .fasilitas-1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 800px;
     }
     .container-top .fasilitas-1 .child-1,
     .container-top .fasilitas-1 .child-2{
@@ -394,8 +399,9 @@ body {
     
     }
     /* 2 */
+
     .container-top .fasilitas-2{
-        margin-top: 210px;
+        height: 800px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -423,6 +429,7 @@ body {
     
     }
 
+
 }
 @media (max-width: 550px) {
     .container-top .fasilitas-1 .child-1,
@@ -443,8 +450,10 @@ body {
     .navbar .hamburger-menu{
         margin-left: 10px;
     }
+    .container-top .fasilitas-1,
     .container-top .fasilitas-2{
-        margin-top: -20px;
+        
+        margin-top: -100px;
     }
     .container-top .fasilitas-1 .child-1 img,
     .container-top .fasilitas-2 .child-1 img{
@@ -452,7 +461,11 @@ body {
     }
     .container-top{
         height: 620px;
-        padding: 0;
+        margin-top: 100px;
         
+    }
+    .container-top .fasilitas-1{
+        margin-top: unset;
+        height: 600px;
     }
 }
