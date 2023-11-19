@@ -44,7 +44,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restraunt</title>
     <!-- js -->
-    <script src="script.js"></script> 
+    <!-- <script src="script.js"></script>  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link
       rel="stylesheet"
@@ -192,11 +192,14 @@ $conn->close();
         <div class='parent' >
             <div class='child' id="phone">
                 <a href="https://wa.me/+62811270606"><img src="img/phone-300.png" alt=""></a>
-                <p>081 127 0606</p>
+                <input type="text" value="+62811270606" id="myInput">
+                <p><button onclick="myFunction()">+62 811 270 606</button></p>
+                
             </div>
             <div class='child'>
                 <img src="img/home-phone-300.png" alt="">
-                <p>(0294) 641 888</p>
+                <input type="text" value="(0294)641888" id="myInput">
+                <p><button onclick="myFunction()">(0294) 641 888</button></p>
             </div>
         </div>
     </div>
@@ -273,6 +276,44 @@ $conn->close();
 
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          window.onscroll = function() {
+            if (window.innerWidth > 768) { // Check the window width
+              scrollFunction();
+            }
+          };
+        });
+        
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("shownav").style.top = "0";
+          } else {
+            document.getElementById("shownav").style.top = "-80px";
+          }
+        }
+
+        function closeMenu() {
+          document.getElementById('menu__toggle').checked = false;
+        }
+
+        function myFunction() {
+          // Get the text field
+          var copyText = document.getElementById("myInput");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+
+    </script>
   </body>
   <footer>
       <div class="footer-content">
