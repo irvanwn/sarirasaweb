@@ -38,7 +38,7 @@ body {
     position: sticky;
     width: 100%;
     overflow: hidden;
-    z-index: 3;
+    z-index: 99;
     justify-content: space-between;
     align-items: center;
 }
@@ -237,6 +237,7 @@ body {
 @media (max-width: 768px) {
     .navbar{
         height: 80px;
+        position: fixed;
     }
 
     .namalogo {
@@ -405,6 +406,7 @@ body {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        /* margin-top: 160px; */
     }
     .container-top .fasilitas-2 .child-1,
     .container-top .fasilitas-2 .child-2{
@@ -427,6 +429,9 @@ body {
         height: 550px;
         width: 550px;
     
+    }
+    .container-top .bg-add{
+        height: 800px;
     }
 
 
@@ -452,8 +457,8 @@ body {
     }
     .container-top .fasilitas-1,
     .container-top .fasilitas-2{
-        
-        margin-top: -100px;
+        margin-top: 0;
+        height: 600px;
     }
     .container-top .fasilitas-1 .child-1 img,
     .container-top .fasilitas-2 .child-1 img{
@@ -464,8 +469,7 @@ body {
         margin-top: 100px;
         
     }
-    .container-top .fasilitas-1{
-        margin-top: unset;
+    .container-top .bg-add{
         height: 600px;
     }
 }

@@ -191,7 +191,7 @@ $conn->close();
         </div>
         <div class='parent' >
             <div class='child' id="phone">
-                <img src="img/phone-300.png" alt="">
+                <a href="https://wa.me/+62811270606"><img src="img/phone-300.png" alt=""></a>
                 <p>081 127 0606</p>
             </div>
             <div class='child'>
@@ -279,9 +279,9 @@ $conn->close();
           <div class="foot-logo"><img src="img/namalogo2.png" alt=""></div>
           <p>We’re a diverse and passionate team that takes the restaurant business to the next level. We stay light on our feet and truly enjoy delivering great food and services.</p>
           <ul class="socials">
-            <li><a href="#"><img src="img/ig.svg" alt="ig"></a></li>
+            <li><a href="https://www.instagram.com/rm_sarirasa_kendal/"><img src="img/ig.svg" alt="ig"></a></li>
             <li><a href="#"><img src="img/maill.svg" alt="mail"></a></li>
-            <li><a href="#"><img src="img/phone.svg" alt="phone"></a></li>
+            <li><a href="https://wa.me/+62811270606"><img src="img/phone.svg" alt="phone"></a></li>
             <!-- (0294)641888 -->
           </ul>
       </div>

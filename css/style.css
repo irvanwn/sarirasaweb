@@ -25,6 +25,7 @@ div > a,div > a:hover {
 .html {
     font-size: 62.5%;
     text-decoration: none;
+    transition: all 1s;
 }
 
 body {
@@ -281,9 +282,9 @@ body {
     /* border: 1px solid red; */
     padding: 20px;
     margin: 0px;
-    width: 250px;
     word-wrap: break-word;
     vertical-align: middle;
+
 }
 .container-dua .grandparent .parent .child p{
     margin-top: 10px;
@@ -621,7 +622,7 @@ footer{
 }
 @media (max-width: 1024px) {
     .container-satu .bgimage{
-        margin-top: -80px; 
+        margin-top: -100px; 
     }
     /*navbar on bg*/
     .container-satu .nav_top .logo img{
@@ -700,6 +701,9 @@ footer{
     }
     .container-dua .grandparent .parent .child p{
         font-size: 12px;
+    }
+    .container-dua .grandparent{
+        padding-top: 50px;
     }
 }
 
@@ -891,7 +895,7 @@ footer{
 
 .container-dua .grandparent .parent .child{
     width: 150px;
-    background-color: #d3d3d3;
+
 }
 .container-dua .grandparent .parent .child img{
     height: 40px;
@@ -901,6 +905,9 @@ footer{
 @media (max-width: 610px) {
     .container-dua .grandparent .parent .child{
         width: 200px;
+    }
+    .container-dua .grandparent{
+        max-width: 450px;
     }
 }
 
