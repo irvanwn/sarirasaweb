@@ -370,7 +370,9 @@ body {
         background-color: #CFD8DC;
     }
 
-    
+    .container-top{
+        margin-top: 80px;
+    }
     .container-top .fasilitas-1{
         flex-direction: column;
         justify-content: center;
@@ -466,7 +468,6 @@ body {
     }
     .container-top{
         height: 620px;
-        margin-top: 100px;
         
     }
     .container-top .bg-add{
