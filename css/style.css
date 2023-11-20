@@ -749,7 +749,7 @@ footer{
     }
     .navbar{
         height: 80px;
-        position: sticky;
+        position: fixed;
     }
     .namalogo {
         margin: 0;
