@@ -28,7 +28,7 @@
                             class="mdi mdi-format-list-bulleted"></i> <span> Halaman </span> <span
                             class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
-                        <li><a href="dashboard.php">About us</a></li>
+                        <li><a href="changecontact.php">Ubah Kontak</a></li>
                         <li><a href="dashboard.php">Contact us</a></li>
                     </ul>
                 </li>

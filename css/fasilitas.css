@@ -293,6 +293,7 @@ body {
     }
     
     #menu__toggle {
+        position: fixed;
         opacity: 0;
     }
     #menu__toggle:checked + .menu__btn > span {

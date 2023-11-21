@@ -162,11 +162,11 @@ if($rowcount==0)
         </td>
         <td>
             <a href="edit-post.php?pid=<?php echo htmlentities($row['postid']); ?>">
-                <i class="fa fa-pencil" style="color: #29b6f6;"></i>
+                <i class="fa fa-pencil" style="color: #29b6f6; font-size: 25px;"></i>
             </a>
             &nbsp;
             <a href="manage-posts.php?pid=<?php echo htmlentities($row['postid']); ?>&action=del" onclick="return confirm('Do you really want to delete?')">
-                <i class="fa fa-trash-o" style="color: #f05050;"></i>
+                <i class="fa fa-trash-o" style="color: #f05050;font-size: 25px;"></i>
             </a>
         </td>
         <td style="text-align: right;">
