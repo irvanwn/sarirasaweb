@@ -98,7 +98,7 @@ if($_GET['presid'])
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="page-title-box">
-                                    <h2 class="page-title">Hapus Highlight</h2>
+                                    <h2 class="page-title" style="padding: 10px 0px;">Hapus Highlight</h2>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
                                             <a href="#" class="redcolor">Admin</a>
@@ -154,26 +154,26 @@ if($rowcount==0)
 <?php 
 } else {
     while ($row = mysqli_fetch_array($query)) {
-        $deskPendek = substr(htmlentities($row['description']), 0, 20);
+        $deskPendek = substr(htmlentities($row['description']), 0, 60);
 ?>
     <tr>
         <td>
             <div class="row">
                 <div class="col-xs-12">
-                    <strong><?php echo htmlentities($row['title']); ?></strong>
+                    <strong style="font-size: 20px;"><?php echo htmlentities($row['title']); ?></strong>
                 </div>
                 <div class="col-xs-12">
-                    <p class="text-muted" style="margin-top: 5px;"><?php echo $deskPendek; ?>...</p>
+                    <p class="text-muted" style="margin-top: 5px; font-size: 15px;"><?php echo $deskPendek; ?>...</p>
                 </div>
             </div>
         </td>
         <td>
             <a href="trash-posts.php?pid=<?php echo htmlentities($row['postid']);?>&&action=restore" onclick="return confirm('Do you really want to activate this highlight?')">
-                <i class="ion-arrow-return-right" style="color: #29b6f6;" title="Restore this Post"></i>
+                <i class="ion-arrow-return-right" style="color: #29b6f6; font-size: 20px;margin-right:20px;" title="Restore this Post"></i>
             </a>
             &nbsp;
             <a href="trash-posts.php?presid=<?php echo htmlentities($row['postid']);?>&&action=perdel" onclick="return confirm('Do you really want to permanently delete this highlight?')">
-                <i class="fa fa-trash-o" style="color: #f05050" title="Permanently delete this post"></i>
+                <i class="fa fa-trash-o" style="color: #f05050 ;font-size: 20px;" title="Permanently delete this post"></i>
             </a> 
         </td>
         <td style="text-align: right;">

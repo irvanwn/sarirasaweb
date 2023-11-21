@@ -120,7 +120,7 @@ if (strlen($_SESSION['login']) == 0) {
                                     <h4 class="page-title redcolor">Tambah Highlight </h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
-                                            <a href="#" class="redcolor">Highlight</a>
+                                            <a href="#" class="redcolor" >Highlight</a>
                                         </li>
                                         <li>
                                             <a href="#" class="redcolor">Tambah Highlight </a>
@@ -164,7 +164,7 @@ if (strlen($_SESSION['login']) == 0) {
                                 <div class="">
                                     <form name="addpost" method="post" enctype="multipart/form-data">
                                         <div class="form-group m-b-20">
-                                            <label for="exampleInputEmail1">Judul Highlight</label>
+                                            <label for="exampleInputEmail1"style="font-size: 20px;">Judul Highlight</label>
                                             <input type="text" class="form-control" id="posttitle" name="posttitle"
                                                 placeholder="Enter title" required>
                                         </div>
@@ -172,7 +172,7 @@ if (strlen($_SESSION['login']) == 0) {
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="card-box">
-                                                    <h4 class="m-b-30 m-t-0 header-title"><b>Deskripsi Highlight</b></h4>
+                                                    <h4 class="m-b-30 m-t-0 header-title" style="font-size: 20px;"><b>Deskripsi Highlight</b></h4>
                                                     <textarea class="summernote" name="postdescription"
                                                         required></textarea>
                                                 </div>

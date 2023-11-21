@@ -90,7 +90,7 @@ $error="Something went wrong . Please try again.";
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="page-title-box">
-                                    <h2 class="page-title">Olah Highlight</h2>
+                                    <h2 class="page-title" style="padding: 10px 0;">Olah Highlight</h2>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
                                             <a href="#" class="redcolor">Admin</a>
@@ -147,26 +147,26 @@ if($rowcount==0)
 <?php 
 } else {
     while ($row = mysqli_fetch_array($query)) {
-        $deskPendek = substr(htmlentities($row['description']), 0, 20);
+        $deskPendek = substr(htmlentities($row['description']), 0, 60);
 ?>
     <tr>
         <td>
             <div class="row">
                 <div class="col-xs-12">
-                    <strong><?php echo htmlentities($row['title']); ?></strong>
+                    <strong style="font-size:20px;"><?php echo htmlentities($row['title']); ?></strong>
                 </div>
                 <div class="col-xs-12">
-                    <p class="text-muted" style="margin-top: 5px;"><?php echo $deskPendek; ?>...</p>
+                    <p class="text-muted" style="margin-top: 5px;font-size:16px;"><?php echo $deskPendek; ?>...</p>
                 </div>
             </div>
         </td>
         <td>
             <a href="edit-post.php?pid=<?php echo htmlentities($row['postid']); ?>">
-                <i class="fa fa-pencil" style="color: #29b6f6; font-size: 25px;"></i>
+                <i class="fa fa-pencil" style="color: #29b6f6; font-size: 22px; margin-right: 20px;"></i>
             </a>
             &nbsp;
             <a href="manage-posts.php?pid=<?php echo htmlentities($row['postid']); ?>&action=del" onclick="return confirm('Do you really want to delete?')">
-                <i class="fa fa-trash-o" style="color: #f05050;font-size: 25px;"></i>
+                <i class="fa fa-trash-o" style="color: #f05050;font-size: 22px;"></i>
             </a>
         </td>
         <td style="text-align: right;">
