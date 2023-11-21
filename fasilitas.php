@@ -41,7 +41,7 @@
                 <li><a class="menu__item" href="index.php">Home</a></li>
                 <li><a class="menu__item" href="fasilitas.php">Fasilitas</a></li>
                 <li><a class="menu__item" href="highlight.php">Highlight</a></li>
-                <li><a class="menu__item" href="#">Contact</a></li>
+                <li><a class="menu__item" href="index.php#contact">Contact</a></li>
             </ul>
         </div>
         <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
