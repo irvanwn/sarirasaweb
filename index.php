@@ -13,6 +13,7 @@ if ($conn->connect_error) {
 }
 
   $sql = "SELECT title, description, highlightimg FROM highlight WHERE id IN (6, 7, 8)";
+  // $sql = "SELECT instagram, email, telpon, telpon_rumah from informasi where 1";
 //$sql = "SELECT title, description, highlightimg, uploadDate, Active FROM highlight where Active=1 ORDER BY uploadDate LIMIT 3";
 
 $result = $conn->query($sql);
@@ -31,6 +32,28 @@ if ($result->num_rows > 0) {
         "highlightimg" => "Image not found"
     );
 }
+// data 2
+
+$sql2 = "SELECT instagram, email, telpon, telpon_rumah FROM informasi WHERE 1";
+$result2 = $conn->query($sql2);
+
+$data2 = array(); // Initialize an array to store the retrieved data for the second query
+
+// Check for errors in the second query
+if ($result2->num_rows > 0) {
+    while ($row = $result2->fetch_assoc()) {
+        $data2[] = $row; // Store each row in the data array
+    }
+} else {
+    // Handle the case where no data is found in the second query
+    $data2[] = array(
+        "instagram" => "Instagram not found",
+        "email" => "Email not found",
+        "telpon" => "Phone not found",
+        "telpon_rumah" => "Home phone not found"
+    );
+}
+
 
 $conn->close();
 ?>
@@ -182,11 +205,11 @@ $conn->close();
         <div class='parent'>
             <div class='child'>
                 <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
-                <p>@rm_sarirasa_kendal</p>
+                <p>@<?php echo isset($data2[0]["instagram"]) ? $data2[0]["instagram"] : "Instagram not found"; ?></p>
             </div>
             <div class='child'>
                 <a href=""><img src="img/email-300.png" alt=""></a>
-                <p>sarirasa098@gmail.com</p>
+                <p><?php echo isset($data2[0]["email"]) ? $data2[0]["email"] : "Email not found"; ?></p>
             </div>
         </div>
         <div class='parent' >

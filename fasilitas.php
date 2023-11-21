@@ -29,7 +29,7 @@
             <a href="index.php">Home</a>
             <a href="fasilitas.php">Fasilitas</a>
             <a href="highlight.php">Highlight</a>
-            <a href="#">Contact</a>
+            <a href="index.php#contact">Contact</a>
         </div>
         <!-- navbar-popup -->
         <div class="hamburger-menu">
