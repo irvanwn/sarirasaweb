@@ -30,7 +30,7 @@ div > a,div > a:hover {
 
 body {
     font-family: "Poppins", sans-serif;
-    /* height: 3000px; */
+    /* width: 100%; */
 }
 #shownav{
     top: -80px;
@@ -283,7 +283,7 @@ body {
     display: inline-block;
     /* border: 1px solid red; */
     padding: 20px 10px;
-    margin: 0px;
+    margin: 0 10px;
     width: 315px;
     word-wrap: break-word;
     vertical-align: middle;
@@ -328,7 +328,7 @@ body {
     justify-content: center;
     gap: 0px;
     margin: 6% auto 0;
-    position: relative; /* Add position relative to the container */
+    position: relative; 
     z-index: 2;
     height: 1080px;
 }
@@ -341,7 +341,7 @@ body {
 
     
 }
-/* Add a ::before pseudo-element to create a blurred background overlay */
+
 .container-tiga::before {
     content: "";
     position: absolute;
@@ -349,11 +349,11 @@ body {
     left: 0;    
     width: 100%;
     height: 100%;
-    background-image: url('../img/highlight-sarirasa-bg.png'); /* Update the path to your image */
+    background-image: url('../img/highlight-sarirasa-bg.png'); 
     background-size: cover;
     background-position: center;
-    filter: blur(5px); /* Adjust the blur intensity as needed */
-    z-index: -1; /* Place it behind the content */
+    filter: blur(5px); 
+    z-index: -1; 
   }
 
 .single-card {
@@ -558,7 +558,13 @@ footer{
     text-transform: capitalize;
 }
 
+@media (max-width: 1686px) {
+    .container-dua .grandparent .parent .child {
+        margin: 0px;
 
+    
+    }
+}
 @media (max-width: 1600px) {
     .container-dua .grandparent .parent .child {
         width: 254px;
@@ -841,7 +847,6 @@ footer{
         height: 60px;
         cursor: pointer;
         z-index: 1;
-        /* background-color: #b9b6b6; */
     }
 
 
@@ -925,6 +930,11 @@ footer{
     .container-dua .grandparent .parent .child img{
         height: 40px;
     }
+    .container-tiga::before {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.000);
+    }
+    
 }
 
 @media (max-width: 610px) {
@@ -957,6 +967,12 @@ footer{
         width: 160px;
     }
 
+}
+
+@media (max-width: 390px) {
+    .menu__btn {
+        margin: 7 10 30 10;
+    }
 }
 
 @media (max-width: 320px) {

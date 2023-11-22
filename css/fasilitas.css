@@ -84,14 +84,14 @@ body {
 }
 .container-top .bg-add{
     background-color: rgb(240, 240, 240);
-    height: 640px;
+    height: 600px;
     width: 100%;
 }
 .container-top .fasilitas-1{
     /* border: 1px solid red; */
     display: flex;
     max-width: 1200px;
-    height: 640px;
+    height: 600px;
     margin: 0 auto;
     flex-direction: row;
 }
@@ -106,8 +106,8 @@ body {
 .container-top .fasilitas-1 .child-1 img{
     overflow: hidden;
     object-fit: cover;
-    height: 550px;
-    width: 550px;
+    height: 530px;
+    width: 530px;
 
 }
 .container-top .fasilitas-1 .child-2{
