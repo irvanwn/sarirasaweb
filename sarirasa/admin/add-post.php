@@ -173,7 +173,7 @@ if (strlen($_SESSION['login']) == 0) {
                                             <div class="col-sm-12">
                                                 <div class="card-box">
                                                     <h4 class="m-b-30 m-t-0 header-title" style="font-size: 20px;"><b>Deskripsi Highlight</b></h4>
-                                                    <textarea class="summernote" name="postdescription"
+                                                    <textarea class="summernote" name="postdescription" style="width: 100%; height:100px;"
                                                         required></textarea>
                                                 </div>
                                             </div>
