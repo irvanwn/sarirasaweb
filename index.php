@@ -139,7 +139,7 @@ $conn->close();
     <div class="container-dua" id="Fasilitas">
       <h2>Fasilitas Rumah Makan</h2>
       <div class="hr-center"><div class="line-h2"></div></div>
-      <div class="carousell"> 
+      <div class="carousell" id="carouselContainer"> 
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -216,13 +216,13 @@ $conn->close();
             <div class='child' id="phone">
                 <a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/phone-300.png" alt=""></a>
                 <input type="text" value="<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>" id="myInput">
-                <p><button onclick="myFunction()"><?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?></button></p>
+                <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?></button></p>
                 
             </div>
             <div class='child'>
                 <img src="img/home-phone-300.png" alt="">
                 <input type="text" value="<?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?>" id="myInput">
-                <p><button onclick="myFunction()"><?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?></button></p>
+                <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?></button></p>
             </div>
         </div>
     </div>
@@ -321,7 +321,7 @@ $conn->close();
           document.getElementById('menu__toggle').checked = false;
         }
 
-        function myFunction() {
+        function copyfnc() {
           // Get the text field
           var copyText = document.getElementById("myInput");
         
@@ -335,6 +335,15 @@ $conn->close();
           // Alert the copied text
           alert("Copied the text: " + copyText.value);
         }
+
+        // Get the carousel container element
+        var carouselContainer = document.getElementById('carouselContainer');
+
+        // Add a click event listener to the carousel container
+        carouselContainer.addEventListener('click', function() {
+          // Redirect to fastilitas.php when the carousel is clicked
+          window.location.href = 'fasilitas.php';
+        });
 
     </script>
   </body>

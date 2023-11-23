@@ -368,7 +368,7 @@ body {
         transition-duration: .25s;
     }
     .menu__item:hover {
-        background-color: #CFD8DC;
+        background-color: #adadad;
     }
 
     .container-top{

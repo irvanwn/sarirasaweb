@@ -842,17 +842,17 @@ footer{
     }
     .menu__btn {
         position: fixed;
-        margin: 7 10 30 30;
+        margin: 7px 0px 30px 30px; 
         width: 40px;
         height: 60px;
         cursor: pointer;
         z-index: 1;
+        
     }
 
 
     .menu__btn > span{
         margin-top: 30px;
-        
     }
     .menu__btn > span,
     .menu__btn > span::before,
@@ -898,7 +898,7 @@ footer{
         transition-duration: .25s;
     }
     .menu__item:hover {
-        background-color: #CFD8DC;
+        background-color: #adadad;
     }
 
 
@@ -955,6 +955,17 @@ footer{
         height: 36px;
         font-size: 12px;
     }
+    .container-empat .box-parent{
+        width: 90%;
+    }
+    .container-empat .box-parent .child-1{
+        margin: 45px 25px 45px 25px;
+    }
+    .container-empat .box-parent .child-2{
+        padding: 0 5px 0 5px;
+        margin: 0 auto 30px auto;
+    }
+
 }
 @media (max-width: 480px) {
     html {

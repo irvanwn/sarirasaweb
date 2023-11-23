@@ -317,7 +317,10 @@ body {
         transition-duration: .25s;
     }
     .menu__item:hover {
-        background-color: #CFD8DC;
+        background-color: #adadad;
+    }
+    .container{
+        margin-top: 10px;
     }
 }
 
@@ -330,8 +333,8 @@ body {
     }
     .child{
         height: 400px;
-        width: 120%;
-        margin-left: -35px;
+        /* width: 120%; */
+        /* margin-left: -35px; */
         
     }
     .child .image-area img{
