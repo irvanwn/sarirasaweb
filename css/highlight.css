@@ -331,7 +331,7 @@ body {
     .child{
         height: 400px;
         width: 120%;
-        margin-left: -25px;
+        margin-left: -35px;
         
     }
     .child .image-area img{
@@ -339,7 +339,12 @@ body {
         object-fit: cover;
     }
     .menu__btn > span{
-        margin: 35px 0 0 0px ;
+        margin: 35px 0 0 10px ;
         
+    }
+}
+@media (max-width: 390px) {
+    .menu__btn > span{
+        margin: 35px 0 0 0px ;
     }
 }

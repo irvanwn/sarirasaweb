@@ -214,15 +214,15 @@ $conn->close();
         </div>
         <div class='parent' >
             <div class='child' id="phone">
-                <a href="https://wa.me/+62811270606"><img src="img/phone-300.png" alt=""></a>
-                <input type="text" value="+62811270606" id="myInput">
-                <p><button onclick="myFunction()">+62 811 270 606</button></p>
+                <a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/phone-300.png" alt=""></a>
+                <input type="text" value="<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>" id="myInput">
+                <p><button onclick="myFunction()"><?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?></button></p>
                 
             </div>
             <div class='child'>
                 <img src="img/home-phone-300.png" alt="">
-                <input type="text" value="(0294)641888" id="myInput">
-                <p><button onclick="myFunction()">(0294) 641 888</button></p>
+                <input type="text" value="<?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?>" id="myInput">
+                <p><button onclick="myFunction()"><?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?></button></p>
             </div>
         </div>
     </div>

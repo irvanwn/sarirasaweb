@@ -475,6 +475,11 @@ body {
         height: 600px;
     }
     .menu__btn > span{
+        margin: 35px 0 0 10px ;
+    }
+}
+@media (max-width: 390px) {
+    .menu__btn > span{
         margin: 35px 0 0 0px ;
     }
 }
