@@ -135,7 +135,7 @@ $error="Something went wrong . Please try again.";
 <tbody>
 
 <?php
-$query=mysqli_query($con,"select highlight.id as postid, highlight.highlightIMG, highlight.title as title, highlight.description from highlight where highlight.Active=1");
+$query=mysqli_query($con,"select highlight.id as postid, highlight.highlightIMG, highlight.title as title, highlight.description from highlight where highlight.Active=1 order by postid desc");
 $rowcount=mysqli_num_rows($query);
 if($rowcount==0)
 {

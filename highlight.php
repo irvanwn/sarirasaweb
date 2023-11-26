@@ -80,7 +80,7 @@ $conn->close();
                 <li><a class="menu__item" href="index.php#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="namalogomobile" ><img src="iconset/NamaLogo2.png" alt=""></div>
+        <div class="namalogomobile" ><img src="img/iconset/NamaLogo2.png" alt=""></div>
     </nav>
     <div class="container">
     <?php $count = 0; ?>

@@ -981,6 +981,10 @@ footer{
 }
 
 @media (max-width: 390px) {
+    .container-satu .btn-centered{
+        top: 85%;
+    }
+    
     .menu__btn {
         margin: 7 10 30 10;
     }
