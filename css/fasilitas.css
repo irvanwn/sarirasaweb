@@ -77,9 +77,6 @@ body {
 
 /* end nav */
 
-.custom-width {
-    width: 540px;
-}
 .container-top{
     /* border: 1px solid red;  */
     width: 100%;
@@ -111,8 +108,8 @@ body {
     object-fit: cover;
     height: 540px;
     width: 540px;
-
 }
+
 .container-top .fasilitas-1 .child-2{
     /* border: 1px solid red; */
     padding: 0 30px;
@@ -148,8 +145,8 @@ body {
 .container-top .fasilitas-2 .child-1 img{
     overflow: hidden;
     object-fit: cover;
-    height: 550px;
-    width: 550px;
+    height: 540px;
+    width: 540px;
 
 }
 .container-top .fasilitas-2 .child-2{
@@ -210,10 +207,14 @@ body {
         justify-content: flex-start;
         width: 90%;
     }
+    .container-top .fasilitas-1 .child-1 img{
+        justify-content: flex-end;
+    }
     .container-top .fasilitas-1 .child-1 img,
     .container-top .fasilitas-2 .child-1 img{
         width: 95%;
     }
+    /* .container-top .fasilitas-2 .child-1 img{ */
     /* 2 */
     .container-top .fasilitas-2 .child-1{
         justify-content: flex-start;
