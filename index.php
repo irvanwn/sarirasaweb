@@ -290,7 +290,6 @@ $conn->close();
               <div class="line-h2"></div>
               <p>Jalan Raya Semarang - Jakarta Km. 42,3 Jenarsari - Gemuh - Kendal. </p>
               <p>Posisi di tepi Jalan Pantura (Nasional 1) </p>
-              <p>Luas Tanah 2,5 Hektare.</p>
             </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31683.743059628916!2d110.08201522131031!3d-6.954004334926764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7042e2bff83f5b%3A0x9a813de02a5a15a!2sRumah%20Makan%20Sari%20Rasa%20Weleri%20Kendal!5e0!3m2!1sen!2sid!4v1699859070473!5m2!1sen!2sid" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="child-2"></iframe>
