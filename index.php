@@ -88,8 +88,8 @@ $conn->close();
   <body>
     <!-- navbar main always stick hidden on top -->
     <nav class="navbar" id="shownav">
-        <div class="logo"><img src="img/logosr500.png" alt=""></div>
-        <div class="namalogo"><img src="img/NamaLogo.png" alt=""></div>
+        <div class="logo"><img src="img/iconset/logosr500.png" alt=""></div>
+        <div class="namalogo"><img src="img/iconset/NamaLogo.png" alt=""></div>
         <div class="menu_full">
             <a href="#home">Home</a>
             <a href="fasilitas.php">Fasilitas</a>
@@ -109,12 +109,12 @@ $conn->close();
                 <li><a class="menu__item" href="#contact"onclick="closeMenu()">Contact</a></li>
             </ul>
         </div>
-        <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
+        <div class="namalogomobile" ><img src="img/iconset/NamaLogo2.png" alt=""></div>
     </nav>
     <!-- navbar home bg only -->
     <div class="container-satu" id="home">
       <div class="nav_top" id="overlaynav">
-          <div class="logo"><img src="img/logosr500.png" alt=""></div>
+          <div class="logo"><img src="img/iconset/logosr500.png" alt=""></div>
           <div class="menu_top">
               <a href="#home">Home</a>
               <a href="fasilitas.php">Fasilitas</a>
@@ -126,12 +126,12 @@ $conn->close();
           <button class="btn-contact">Kontak Kami</button>
         </div>
         <div class="bgimage">
-            <img src="img/sari-rasa-mainbg-shadewhite.png" alt="bg-sarirasa">
+            <img src="img/iconset/sari-rasa-mainbg-shadewhite.png" alt="bg-sarirasa">
             
         </div>
 
         
-        <div class="srlogonama" id="overlaynamalogo"><img src="img/NamaLogo.png" alt=""></div>
+        <div class="srlogonama" id="overlaynamalogo"><img src="img/iconset/NamaLogo.png" alt=""></div>
         
     </div>
     
@@ -204,23 +204,23 @@ $conn->close();
       <div class="grandparent" id="contact">
         <div class='parent'>
             <div class='child'>
-                <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
+                <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/iconset/insta-300.png" alt=""></a>
                 <p>@<?php echo isset($data2[0]["instagram"]) ? $data2[0]["instagram"] : "Instagram not found"; ?></p>
             </div>
             <div class='child'>
-                <a href=""><img src="img/email-300.png" alt=""></a>
+                <a href=""><img src="img/iconset/email-300.png" alt=""></a>
                 <p><?php echo isset($data2[0]["email"]) ? $data2[0]["email"] : "Email not found"; ?></p>
             </div>
         </div>
         <div class='parent' >
             <div class='child' id="phone">
-                <a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/phone-300.png" alt=""></a>
+                <a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/iconset/phone-300.png" alt=""></a>
                 <input type="text" value="<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>" id="myInput">
                 <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?></button></p>
                 
             </div>
             <div class='child'>
-                <img src="img/home-phone-300.png" alt="">
+                <img src="img/iconset/home-phone-300.png" alt="">
                 <input type="text" value="<?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?>" id="myInput">
                 <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?></button></p>
             </div>
@@ -349,12 +349,12 @@ $conn->close();
   </body>
   <footer>
       <div class="footer-content">
-          <div class="foot-logo"><img src="img/namalogo2.png" alt=""></div>
+          <div class="foot-logo"><img src="img/iconset/namalogo2.png" alt=""></div>
           <p>We’re a diverse and passionate team that takes the restaurant business to the next level. We stay light on our feet and truly enjoy delivering great food and services.</p>
           <ul class="socials">
-            <li><a href="https://www.instagram.com/rm_sarirasa_kendal/"><img src="img/ig.svg" alt="ig"></a></li>
-            <li><a href="#"><img src="img/maill.svg" alt="mail"></a></li>
-            <li><a href="https://wa.me/+62811270606"><img src="img/phone.svg" alt="phone"></a></li>
+            <li><a href="https://www.instagram.com/rm_sarirasa_kendal/"><img src="img/iconset/ig.svg" alt="ig"></a></li>
+            <li><a href="#"><img src="img/iconset/maill.svg" alt="mail"></a></li>
+            <li><a href="https://wa.me/+62811270606"><img src="img/iconset/phone.svg" alt="phone"></a></li>
             <!-- (0294)641888 -->
           </ul>
       </div>

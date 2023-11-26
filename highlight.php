@@ -59,8 +59,8 @@ $conn->close();
 </head>
 <body>
     <nav class="navbar" id="shownav">
-        <div class="logo"><img src="img/logosr500.png" alt=""></div>
-        <div class="namalogo"><img src="img/NamaLogo.png" alt=""></div>
+        <div class="logo"><img src="img/iconset/logosr500.png" alt=""></div>
+        <div class="namalogo"><img src="img/iconset/NamaLogo.png" alt=""></div>
         <div class="menu_full">
             <a href="index.php">Home</a>
             <a href="fasilitas.php">Fasilitas</a>
@@ -80,7 +80,7 @@ $conn->close();
                 <li><a class="menu__item" href="index.php#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="namalogomobile" ><img src="img/NamaLogo2.png" alt=""></div>
+        <div class="namalogomobile" ><img src="iconset/NamaLogo2.png" alt=""></div>
     </nav>
     <div class="container">
     <?php $count = 0; ?>
