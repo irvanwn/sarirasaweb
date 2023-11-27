@@ -224,10 +224,10 @@ body {
 
 .container-dua .carousell{
     width: 80%;
-    margin: auto;
+    margin: 20px auto auto auto;
 }
 .container-dua .carousell img{
-    height: 640px;
+    height: 660px;
     object-fit: cover;
     /* filter: brightness(0.5); */
 }
@@ -353,7 +353,7 @@ body {
     left: 0;    
     width: 100%;
     height: 100%;
-    background-image: url('../img/highlight-sarirasa-bg.png'); 
+    background-image: url('../img/iconset/highlight-sarirasa-bg.png'); 
     background-size: cover;
     background-position: center;
     filter: blur(5px); 
@@ -459,7 +459,7 @@ body {
     z-index: 2;
 }
 .container-empat .box-parent{
-    height: 400px;
+    height: 450px;
     width: 60%;
     background-color: #ffffff;
     margin: -100px auto 0 auto;
@@ -468,8 +468,6 @@ body {
     flex-direction: row;
 }
 .container-empat .box-parent .child-1{
-    /* background-color: #E20D0D; */
-    /* width: 40%; */
     flex: 4;
     margin: 45px 80px 45px 40px;
 }
@@ -565,9 +563,21 @@ footer{
 @media (max-width: 1686px) {
     .container-icon .grandparent .parent .child {
         margin: 0px;
-
-    
     }
+    .container-dua .carousell{
+        width: 70%;
+        margin: auto;
+    }
+    .container-dua .carousell img{
+        height: 550px;
+        object-fit: cover;
+        margin: 20px auto auto auto;
+    }
+    .container-empat .box-parent{
+        height: 420px;
+        margin-top: -200px;
+    }
+    
 }
 @media (max-width: 1600px) {
     .container-icon .grandparent .parent .child {
@@ -604,6 +614,7 @@ footer{
     .container-empat .box-parent{
         width: 70%;
     }
+    
 }
 
 @media (max-width: 1280px) {

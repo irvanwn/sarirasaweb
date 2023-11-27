@@ -12,9 +12,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-  $sql = "SELECT title, description, highlightimg FROM highlight WHERE id IN (6, 7, 8)";
+  // $sql = "SELECT title, description, highlightimg FROM highlight WHERE id IN (6, 7, 8)";
   // $sql = "SELECT instagram, email, telpon, telpon_rumah from informasi where 1";
-//$sql = "SELECT title, description, highlightimg, uploadDate, Active FROM highlight where Active=1 ORDER BY uploadDate LIMIT 3";
+$sql = "SELECT title, description, highlightimg, uploadDate, Active FROM highlight where Active=1 ORDER BY id desc LIMIT 3";
 
 $result = $conn->query($sql);
 
@@ -136,8 +136,8 @@ $conn->close();
     <div class="container-dua" id="Fasilitas">
       <h2>Fasilitas Rumah Makan</h2>
       <div class="hr-center"><div class="line-h2"></div></div>
-      <!-- <div class="carousell" id="carouselContainer"> 
-        <div id="carouselExampleCaptions" class="carousel" data-bs-interval="1000">
+      <div class="carousell" id="carouselContainer"> 
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -145,21 +145,21 @@ $conn->close();
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/parkir/parkir1.jpg" class="d-block w-100" alt="...">
+              <img src="img/parkir/parkir1.jpg" class="d-block w-100 ms-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/service/service2.jpg" class="d-block w-100" alt="...">
+              <img src="img/service/service2.jpg" class="d-block w-100 ms-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">  
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/service6.jpg" class="d-block w-100" alt="...">
+              <img src="img/service/service6.jpg" class="d-block w-100 ms-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -175,56 +175,7 @@ $conn->close();
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div> -->
-      <div class="carousell" id="carouselContainer"> 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/parkir/parkir1.jpg" class="d-block custom-width ms-auto" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/service/service2.jpg" class="d-block custom-width ms-auto" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/service/service6.jpg" class="d-block custom-width ms-auto" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
       </div>
-
-      
-      <!-- <div class="icon-set">
-        <div class="icon insta">
-          <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/insta-300.png" alt=""></a>
-          <p>@rm_sarirasa_kendal</p>
-        </div>
-        <div class="icon email">
-          <a href=""><img src="img/email-300.png" alt=""></a>
-          <p>sarirasa098@gmail.com</p>
-        </div>
-        <div class="icon ph">
-          <img src="img/phone-300.png" alt="">
-          <p>081 127 0606</p>
-          <p></p>
-        </div>
-        <div class="icon homeph">
-          <img src="img/home-phone-300.png" alt="">
-          <p>(0294) 641 888</p>
-        </div>
-      </div> -->
     </div>
 
     <div class="container-icon">
@@ -259,7 +210,7 @@ $conn->close();
         <h1 id="overlayheadhl">KABAR TERKINI</h1>
         <div class="hr-center-h1"><div class="line-h1" id="overlayheadhl"></div></div>
         <?php foreach ($data as $item) { ?>
-        <div class="single-card">
+        <div class="single-card GotoHighlight">
           <div class="img-area">
             <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/<?php echo $item["highlightimg"]; ?>" alt="images">
             <div class="overlay">
@@ -309,8 +260,8 @@ $conn->close();
       </div>
 
       <div class="container-empat">
-          <div class="box-parent">
-            <div class="child-1">
+          <div class="box-parent" >
+            <div class="child-1" >
               <h2>Alamat Kami</h2>
               <div class="line-h2"></div>
               <p>Jalan Raya Semarang - Jakarta Km. 42,3 Jenarsari - Gemuh - Kendal. </p>
@@ -355,10 +306,17 @@ $conn->close();
           alert("Copied the text: " + copyText.value);
         }
 
-        // var carouselContainer = document.getElementById('carouselContainer');
-        // carouselContainer.addEventListener('click', function() {
-        //   window.location.href = 'fasilitas.php';
-        // });
+        var carouselContainer = document.getElementById('carouselContainer');
+        carouselContainer.addEventListener('click', function() {
+          window.location.href = 'fasilitas.php';
+        });
+
+        var highlightElements = document.querySelectorAll('.GotoHighlight');
+        highlightElements.forEach(function (element) {
+          element.addEventListener('click', function() {
+            window.location.href = 'highlight.php';
+          });
+        });
 
     </script>
   </body>
@@ -369,7 +327,7 @@ $conn->close();
           <ul class="socials">
             <li><a href="https://www.instagram.com/rm_sarirasa_kendal/"><img src="img/iconset/ig.svg" alt="ig"></a></li>
             <li><a href="#"><img src="img/iconset/maill.svg" alt="mail"></a></li>
-            <li><a href="https://wa.me/+62811270606"><img src="img/iconset/phone.svg" alt="phone"></a></li>
+            <li><a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/iconset/phone.svg" alt="phone"></a></li>
             <!-- (0294)641888 -->
           </ul>
       </div>
