@@ -290,7 +290,7 @@ body {
     width: 315px;
     word-wrap: break-word;
     vertical-align: middle;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .container-icon .grandparent .parent .child p{
@@ -771,6 +771,8 @@ footer{
     .container-satu{
         background-color: unset;
         margin-top: -50px;
+        /* causing eror on navbar sticky on top 
+        error only occur while on top after scroll down its fine*/
     }
     .container-satu .btn-centered .btn-contact {
         width: 180px;

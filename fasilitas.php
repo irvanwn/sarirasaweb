@@ -327,4 +327,19 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+<footer>
+      <div class="footer-content">
+          <div class="foot-logo"><img src="img/iconset/namalogo2.png" alt=""></div>
+          <p>We’re a diverse and passionate team that takes the restaurant business to the next level. We stay light on our feet and truly enjoy delivering great food and services.</p>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/rm_sarirasa_kendal/"><img src="img/iconset/ig.svg" alt="ig"></a></li>
+            <li><a href="#"><img src="img/iconset/maill.svg" alt="mail"></a></li>
+            <li><a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/iconset/phone.svg" alt="phone"></a></li>
+            <!-- (0294)641888 -->
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy;2023 RM Sari Rasa. All Rights Reserved.</p>
+      </div>
+  </footer>
 </html>
