@@ -148,8 +148,7 @@ body {
     display: flex;
 }
 
-#overlaybtn{
-    /* gambar btn*/
+/* #overlaybtn{
     display: block;
     position: absolute;
     z-index: 2;
@@ -159,7 +158,7 @@ body {
     color: #fff; 
     text-align: center;
 
-}
+} */
 
 
 #overlaynamalogo{
@@ -184,7 +183,7 @@ body {
 }
 
 .container-satu .btn-centered .btn-contact {
-    background-color: var(--primary2); /* Green */
+    background-color: var(--primary2);
     border: none;
     color: white;
     padding: 18px 30px;
@@ -261,25 +260,29 @@ body {
 .icon-email img{
     height: 10px;
 } */
-
-.container-dua .grandparent{
+.container-icon{
+    display: flex;
+    justify-content: center;
+}
+.container-icon .grandparent{
     /* border: 1px solid black; */
     /* margin: 10px;*/
     padding-top: 100px; 
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     width: 80%;
 }
-.container-dua .grandparent .parent {
-    display: inline-block;
+.container-icon .grandparent .parent {
+    display: flex;
     /* border: 1px solid rgb(0, 60, 255); */
     /* padding: 12px; */
     vertical-align: middle;
     width: 100%;
+    justify-content: space-around;
 }
-.container-dua .grandparent .parent .child {
+.container-icon .grandparent .parent .child {
     display: inline-block;
     /* border: 1px solid red; */
     padding: 20px 10px;
@@ -287,21 +290,22 @@ body {
     width: 315px;
     word-wrap: break-word;
     vertical-align: middle;
+    justify-content: space-between;
 
 }
-.container-dua .grandparent .parent .child p{
+.container-icon .grandparent .parent .child p{
     margin-top: 10px;
 }
-.container-dua .grandparent .parent .child img{
+.container-icon .grandparent .parent .child img{
     height: 60px;
 }
-.container-dua .grandparent .parent .child:hover{
+.container-icon .grandparent .parent .child:hover{
     cursor: pointer;
 }
-.container-dua .grandparent .child  input{
+.container-icon .grandparent .child  input{
     display: none;
 }
-.container-dua .grandparent .parent .child button{
+.container-icon .grandparent .parent .child button{
     background-color: rgba(0, 0, 0 , 0.0);
     border: 0px;
 }
@@ -559,14 +563,14 @@ footer{
 }
 
 @media (max-width: 1686px) {
-    .container-dua .grandparent .parent .child {
+    .container-icon .grandparent .parent .child {
         margin: 0px;
 
     
     }
 }
 @media (max-width: 1600px) {
-    .container-dua .grandparent .parent .child {
+    .container-icon .grandparent .parent .child {
         width: 254px;
     
     }
@@ -621,7 +625,7 @@ footer{
         flex-direction: row;
 
     } */
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 220px;
     }
     .container-dua .carousell{
@@ -629,6 +633,14 @@ footer{
     }
     .container-empat .box-parent .child-1 .line-h2{
         margin: 10px 0 15px 0;
+    }
+    .container-icon .grandparent .parent {
+        display: inline-block;
+        justify-content: space-between;
+    }
+    .container-icon .grandparent .parent .child {
+        display: inline-block;
+        justify-content: space-between;
     }
     
 }
@@ -641,10 +653,10 @@ footer{
 
 }
 @media (max-width: 1124px) {
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 200px;
     }
-    .container-dua .grandparent .parent .child img{
+    .container-icon .grandparent .parent .child img{
         height: 50px;
     }
 
@@ -697,7 +709,9 @@ footer{
         padding: 0 10px 0 10px;
         margin: 0 auto 30px auto;
     }
-
+    /* .container-icon .grandparent{
+        flex-direction: column;
+    } */
     
     
 }
@@ -722,14 +736,14 @@ footer{
     .container-dua .carousell{
         width: 750px;
     } 
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 180px;
         padding: 20px 10px;
     }
-    .container-dua .grandparent .parent .child p{
+    .container-icon .grandparent .parent .child p{
         font-size: 12px;
     }
-    .container-dua .grandparent{
+    .container-icon .grandparent{
         padding-top: 50px;
     }
 }
@@ -923,11 +937,11 @@ footer{
     .container-dua .carousell img{
         height: 400px;
     }
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 200px;
 
     }
-    .container-dua .grandparent .parent .child img{
+    .container-icon .grandparent .parent .child img{
         height: 40px;
     }
     .container-tiga::before {
@@ -938,10 +952,10 @@ footer{
 }
 
 @media (max-width: 610px) {
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 200px;
     }
-    .container-dua .grandparent{
+    .container-icon .grandparent{
         max-width: 450px;
     }
 }
@@ -980,7 +994,7 @@ footer{
     .navbar .hamburger-menu{
         margin-left: 0px;
     }
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 160px;
     }
 
@@ -994,10 +1008,20 @@ footer{
     .menu__btn {
         margin: 7 10 30 10;
     }
+    .container-icon{
+        margin: 0;
+        padding: 0; 
+    }
+    .container-icon .grandparent,
+    .container-icon .grandparent .parent{
+        margin: 0 0 0 -10px;
+        padding: 0;     
+        
+    }
 }
 
 @media (max-width: 320px) {
-    .container-dua .grandparent .parent .child{
+    .container-icon .grandparent .parent .child{
         width: 140px;
     }
     .container-empat .box-parent .child-1 h2{
@@ -1016,6 +1040,13 @@ footer{
     }
 }
 
-@media (orientation: landscape) and (max-height: 500px) {
-
+@media (max-width: 300px) {
+    .container-icon .grandparent{
+        flex-direction: column;
+    }
 }
+
+
+/* @media (orientation: landscape) and (max-height: 500px) {
+
+} */

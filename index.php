@@ -88,7 +88,7 @@ $conn->close();
   <body>
     <!-- navbar main always stick hidden on top -->
     <nav class="navbar" id="shownav">
-        <div class="logo"><img src="img/iconset/logosr500.png" alt=""></div>
+        <div class="logo"><a href="index.php"><img src="img/iconset/logosr500.png" alt=""></a></div>
         <div class="namalogo"><img src="img/iconset/NamaLogo.png" alt=""></div>
         <div class="menu_full">
             <a href="#home">Home</a>
@@ -123,14 +123,11 @@ $conn->close();
           </div>
       </div>
       <div class="btn-centered">
-          <button class="btn-contact">Kontak Kami</button>
-        </div>
+        <button class="btn-contact" onclick="GoContact()">Kontak Kami</button>
+      </div>
         <div class="bgimage">
             <img src="img/iconset/sari-rasa-mainbg-shadewhite.png" alt="bg-sarirasa">
-            
         </div>
-
-        
         <div class="srlogonama" id="overlaynamalogo"><img src="img/iconset/NamaLogo.png" alt=""></div>
         
     </div>
@@ -139,8 +136,8 @@ $conn->close();
     <div class="container-dua" id="Fasilitas">
       <h2>Fasilitas Rumah Makan</h2>
       <div class="hr-center"><div class="line-h2"></div></div>
-      <div class="carousell" id="carouselContainer"> 
-        <div id="carouselExampleCaptions" class="carousel slide">
+      <!-- <div class="carousell" id="carouselContainer"> 
+        <div id="carouselExampleCaptions" class="carousel" data-bs-interval="1000">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -148,21 +145,21 @@ $conn->close();
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/IMG20230917120457.jpg" class="d-block w-100" alt="...">
+              <img src="img/parkir/parkir1.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/b60fcd9089e675fd4f67b091e5a931a0.jpg" class="d-block w-100" alt="...">
+              <img src="img/service/service2.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">  
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="http://localhost/sarirasaweb/sarirasa/admin/postimages/b60fcd9089e675fd4f67b091e5a931a0.jpg" class="d-block w-100" alt="...">
+              <img src="img/service6.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -177,6 +174,34 @@ $conn->close();
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
+      </div> -->
+      <div class="carousell" id="carouselContainer"> 
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/parkir/parkir1.jpg" class="d-block custom-width ms-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/service/service2.jpg" class="d-block custom-width ms-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/service/service6.jpg" class="d-block custom-width ms-auto" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
       </div>
 
@@ -200,34 +225,34 @@ $conn->close();
           <p>(0294) 641 888</p>
         </div>
       </div> -->
-
-      <div class="grandparent" id="contact">
-        <div class='parent'>
-            <div class='child'>
-                <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/iconset/insta-300.png" alt=""></a>
-                <p>@<?php echo isset($data2[0]["instagram"]) ? $data2[0]["instagram"] : "Instagram not found"; ?></p>
-            </div>
-            <div class='child'>
-                <a href=""><img src="img/iconset/email-300.png" alt=""></a>
-                <p><?php echo isset($data2[0]["email"]) ? $data2[0]["email"] : "Email not found"; ?></p>
-            </div>
-        </div>
-        <div class='parent' >
-            <div class='child' id="phone">
-                <a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/iconset/phone-300.png" alt=""></a>
-                <input type="text" value="<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>" id="myInput">
-                <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?></button></p>
-                
-            </div>
-            <div class='child'>
-                <img src="img/iconset/home-phone-300.png" alt="">
-                <input type="text" value="<?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?>" id="myInput">
-                <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?></button></p>
-            </div>
-        </div>
     </div>
 
-      
+    <div class="container-icon">
+      <div class="grandparent" id="contact">
+          <div class='parent'>
+              <div class='child'>
+                  <a href="https://www.instagram.com/rm_sarirasa_kendal"><img src="img/iconset/insta-300.png" alt=""></a>
+                  <p>@<?php echo isset($data2[0]["instagram"]) ? $data2[0]["instagram"] : "Instagram not found"; ?></p>
+              </div>
+              <div class='child'>
+                  <a href=""><img src="img/iconset/email-300.png" alt=""></a>
+                  <p><?php echo isset($data2[0]["email"]) ? $data2[0]["email"] : "Email not found"; ?></p>
+              </div>
+          </div>
+          <div class='parent' >
+              <div class='child' id="phone">
+                  <a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/iconset/phone-300.png" alt=""></a>
+                  <input type="text" value="<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>" id="myInput">
+                  <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?></button></p>
+                  
+              </div>
+              <div class='child'>
+                  <img src="img/iconset/home-phone-300.png" alt="">
+                  <input type="text" value="<?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?>" id="myInput">
+                  <p><button onclick="copyfnc()"><?php echo isset($data2[0]["telpon_rumah"]) ? $data2[0]["telpon_rumah"] : "telpon_rumah not found"; ?></button></p>
+              </div>
+          </div>
+      </div>
     </div>
 
       <div class="container-tiga" id="highlight">
@@ -301,13 +326,15 @@ $conn->close();
     <script>
       document.addEventListener("DOMContentLoaded", function() {
           window.onscroll = function() {
-            if (window.innerWidth > 768) { // Check the window width
+            if (window.innerWidth > 768) { 
               scrollFunction();
             }
           };
         });
         
-        
+        function GoContact() {
+          window.location.href = "https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>";
+        }
         function scrollFunction() {
           if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             document.getElementById("shownav").style.top = "0";
@@ -321,28 +348,17 @@ $conn->close();
         }
 
         function copyfnc() {
-          // Get the text field
           var copyText = document.getElementById("myInput");
-        
-          // Select the text field
           copyText.select();
-          copyText.setSelectionRange(0, 99999); // For mobile devices
-        
-          // Copy the text inside the text field
+          copyText.setSelectionRange(0, 99999); 
           navigator.clipboard.writeText(copyText.value);
-          
-          // Alert the copied text
           alert("Copied the text: " + copyText.value);
         }
 
-        // Get the carousel container element
-        var carouselContainer = document.getElementById('carouselContainer');
-
-        // Add a click event listener to the carousel container
-        carouselContainer.addEventListener('click', function() {
-          // Redirect to fastilitas.php when the carousel is clicked
-          window.location.href = 'fasilitas.php';
-        });
+        // var carouselContainer = document.getElementById('carouselContainer');
+        // carouselContainer.addEventListener('click', function() {
+        //   window.location.href = 'fasilitas.php';
+        // });
 
     </script>
   </body>
