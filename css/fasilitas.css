@@ -76,9 +76,8 @@ body {
 }
 
 /* end nav */
-
-button{
-    position: relative;
+.carousel-inner{
+    max-width: 500px;
 }
 
 .container-top{
