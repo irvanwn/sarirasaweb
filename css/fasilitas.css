@@ -77,6 +77,10 @@ body {
 
 /* end nav */
 
+button{
+    position: relative;
+}
+
 .container-top{
     /* border: 1px solid red;  */
     width: 100%;
@@ -96,22 +100,25 @@ body {
     flex-direction: row;
 }
 .container-top .fasilitas-1 .child-1{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: center;
     margin: 0 auto;
     width: 50%;
     display: flex;
-    align-items: center
+    align-items: center;
 }
-.container-top .fasilitas-1 .child-1 img{
+.container-top .fasilitas-1 .child-1 img {
+    display: block;
+    margin: 0 auto;
     overflow: hidden;
     object-fit: cover;
     height: 540px;
-    width: 540px;
+    max-width: 540px;
+    border: 1px solid red;
 }
 
 .container-top .fasilitas-1 .child-2{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -135,22 +142,24 @@ body {
     flex-direction: row;
 }
 .container-top .fasilitas-2 .child-1{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: center;
     margin: 0 auto;
     width: 50%;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 .container-top .fasilitas-2 .child-1 img{
+    display: block;
+    margin: 0 auto;
     overflow: hidden;
     object-fit: cover;
     height: 540px;
-    width: 540px;
-
+    max-width: 540px;
+    border: 1px solid red;
 }
 .container-top .fasilitas-2 .child-2{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     padding: 0 30px;
     display: flex;
     align-items: center;
