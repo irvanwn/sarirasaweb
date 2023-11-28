@@ -90,7 +90,7 @@
                 <div class="child-2">
                     <div class="wrapped">
                         <h1>Parkir Luas</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                        <p>Di sini, Anda akan menemukan parkir yang luas yang tidak hanya menyediakan kelegaan bagi bis, tetapi juga memberikan ruang yang nyaman bagi pengunjung yang membawa kendaraan pribadi. Dengan area parkir yang lapang, Anda tidak harus pusing memikirkan ketersediaan tempat parkir.</p>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
         <div class="child-2">
             <div class="wrapped">
                 <h1>Fasilitas Mushola</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                <p>Selain menyediakan parkir yang luas, terdapat juga fasilitas mushola yang tenang dan nyaman bagi para penumpang yang ingin beribadah sejenak sebelum melanjutkan perjalanan mereka. Dengan ruang yang bersih dan tenang, mushola di sini menjadi tempat yang cocok untuk beristirahat dan merenung sejenak.</p>
             </div>
         </div>
         <div class="child-1">
@@ -178,7 +178,8 @@
                     <div class="child-2">
                         <div class="wrapped">
                             <h1>Service Makan Bis Antarkota & Wisata </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                            <p>Menyajikan makanan khusus untuk perjalanan antarkota dan wisata, tempat ini menjadi lokasi yang cocok bagi pengunjung yang ingin beristirahat dan menikmati makanan yang disediakan tiap hari. Dari hidangan lezat hingga camilan favorit, menu yang terus berubah dan pelayanan yang ramah akan membuat perjalanan Anda semakin berkesan. Nikmati ragam pilihan menu yang disiapkan dengan penuh perhatian untuk memenuhi selera Anda.
+</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +189,7 @@
             <div class="child-2">
                 <div class="wrapped">
                     <h1>Toilet Bersih</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                    <p>Kenyamanan dalam perjalanan adalah prioritas di sini. Toilet yang bersih, terawat dengan baik, dan dilengkapi dengan fasilitas yang memadai memberikan rasa nyaman bagi para penumpang. Anda dapat bersantai dan menikmati makanan Anda tanpa khawatir akan ketersediaan fasilitas toilet yang bersih dan nyaman.</p>
                 </div>
             </div>
             <div class="child-1">
@@ -254,7 +255,7 @@
                 <div class="child-2">
                     <div class="wrapped">
                         <h1>Toko Oleh - oleh</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
+                        <p>Jangan lewatkan kesempatan untuk memilih oleh-oleh dari seleksi yang beragam. Dari makanan manis hingga asin, toko oleh-oleh di sini menawarkan beragam pilihan untuk dijadikan kenangan dalam perjalanan Anda. Temukan beragam oleh-oleh yang menarik sebagai hadiah atau sebagai pengingat indah dari perjalanan Anda.</p>
                     </div>
                 </div>
             </div>

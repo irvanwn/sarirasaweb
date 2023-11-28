@@ -147,22 +147,22 @@ $conn->close();
             <div class="carousel-item active">
               <img src="img/parkir/parkir1.jpg" class="d-block w-100 ms-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5>Parkiran Luas</h5>
+                <p>Parkiran yang luas menjadi fasilitas penting bagi kami</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="img/service/service2.jpg" class="d-block w-100 ms-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">  
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5>Service Makan</h5>
+                <p>Kami menyediakan service makan yang bervariatif</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="img/service/service6.jpg" class="d-block w-100 ms-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5>Service Makan Ber-AC</h5>
+                <p>Terdapat tempat indoor yang ber-AC</p>
               </div>
             </div>
           </div>
