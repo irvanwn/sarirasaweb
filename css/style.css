@@ -771,6 +771,7 @@ footer{
     .container-satu{
         background-color: unset;
         margin-top: -50px;
+        z-index: -1;
         /* causing eror on navbar sticky on top 
         error only occur while on top after scroll down its fine*/
     }
