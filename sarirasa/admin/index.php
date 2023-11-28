@@ -10,7 +10,7 @@ if(isset($_POST['login']))
      $uname=$_POST['username'];
     $password=$_POST['password'];
     // Fetch data from database on the basis of username/email and password
-$sql =mysqli_query($con,"SELECT id,username,email,password FROM admin WHERE (username='$uname' || email='$uname')");
+$sql =mysqli_query($con,"SELECT id,username,email,password,role FROM admin WHERE (username='$uname' || email='$uname')");
 $num=mysqli_fetch_array($sql);
 $log_user = $num['username'];
 $log_user_id = $num['id'];
@@ -23,10 +23,11 @@ if (password_verify($password, $hashpassword)) {
     $query = mysqli_query($con, "insert into activity_log(user_id,user,activity) values('$log_user_id', '$log_user', '$activity')");
 $_SESSION['login']=$_POST['username'];
 $_SESSION['log_user_id'] = $log_user_id;
+$_SESSION['role'] = $num['role'];
 $_SESSION['log_user'] = $log_user;
     echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
   } else {
-echo "<script>alert('Wrong Password');</script>";
+// echo "<script>alert('Wrong Password');</script>";
  
   }
 }

@@ -2,7 +2,7 @@
 session_start();
 include('includes/config.php');
 error_reporting(0);
-if(strlen($_SESSION['login'])==0)
+if((strlen($_SESSION['login'])==0) or ($_SESSION['role'] == 0))
   { 
 header('location:index.php');
 }

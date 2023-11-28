@@ -10,10 +10,16 @@
                     <a href="dashboard.php" class="waves-effect hovercolor"><i class="mdi mdi-view-dashboard"></i>
                         <span> Dashboard </span> </a>
                 </li>
-                <li class="has_sub">
-                    <a href="activity-log.php" class="waves-effect hovercolor"><i class="mdi mdi-walk"></i>
-                        <span> Activity Log </span> </a>
-                </li>
+                <?php
+                    if ($_SESSION['role'] == 1) {
+                ?>
+                    <li class="has_sub">
+                        <a href="activity-log.php" class="waves-effect hovercolor"><i class="mdi mdi-walk"></i>
+                            <span> Activity Log </span> </a>
+                    </li>
+                <?php
+                    }
+                ?>
                 <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect hovercolor"><i
                             class="mdi mdi-format-list-bulleted"></i> <span> Highlight </span> <span
@@ -32,7 +38,7 @@
                             class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
                         <li><a href="changecontact.php">Ubah Kontak</a></li>
-                        <li><a href="dashboard.php">Contact us</a></li>
+                        <!-- <li><a href="dashboard.php">Contact us</a></li> -->
                     </ul>
                 </li>
             </ul>
