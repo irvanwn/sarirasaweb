@@ -14,7 +14,7 @@ $sql =mysqli_query($con,"SELECT id,username,email,password,role FROM admin WHERE
 $num=mysqli_fetch_array($sql);
 $log_user = $num['username'];
 $log_user_id = $num['id'];
-$activity = ' User logged in';
+$activity = 'User logged in';
 if($num>0)
 {
 $hashpassword=$num['password']; // Hashed password fething from database
