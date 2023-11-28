@@ -296,7 +296,7 @@ $conn->close();
 
         function closeMenu() {
           document.getElementById('menu__toggle').checked = false;
-        }Z
+        }
 
         function copyfnc() {
           var copyText = document.getElementById("myInput");
@@ -311,7 +311,7 @@ $conn->close();
           window.location.href = 'fasilitas.php';
         });
 
-        var highlightElements = document.querySelectorAll('single-card');
+        var highlightElements = document.querySelectorAll('.GotoHighlight');
         highlightElements.forEach(function (element) {
           element.addEventListener('click', function() {
             window.location.href = 'highlight.php';
