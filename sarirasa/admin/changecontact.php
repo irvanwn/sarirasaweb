@@ -11,6 +11,10 @@ if (strlen($_SESSION['login']) == 0) {
         $postnomor = $_POST['postnomor'];
         $postnomorrumah = $_POST['postnomorrumah'];
         // UPDATE `informasi` SET `instagram`='[value-1]',`email`='[value-2]',`telpon`='[value-3]',`telpon_rumah`='[value-4]' WHERE 1
+        $log_user = $_SESSION['log_user'];
+        $log_user_id = $_SESSION['log_user_id'] ;
+        $activity = "User updated contact information";
+        $query = mysqli_query($con, "insert into activity_log(user_id,user,activity) values('$log_user_id', '$log_user', '$activity')");
         $query = mysqli_query($con, "update informasi set instagram='$postinstagram',email='$postemail',telpon='$postnomor',telpon_rumah='$postnomorrumah' where 1 ");
         if ($query) {
             $msg = "Post updated ";

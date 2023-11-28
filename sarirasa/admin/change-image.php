@@ -52,7 +52,7 @@ $error="Something went wrong . Please try again.";
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <!-- App title -->
-        <title>Newsportal | Add Post</title>
+        <title>Sari Rasa | Edit Image</title>
 
         <!-- Summernote css -->
         <link href="../plugins/summernote/summernote.css" rel="stylesheet" />
@@ -86,6 +86,9 @@ function getSubCat(val) {
   });
   }
   </script>
+
+        <!-- Main CSS -->
+        <link href="css/styles3.css" rel="stylesheet" type="text/css" />
     </head>
 
 

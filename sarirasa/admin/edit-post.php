@@ -13,6 +13,10 @@ if (strlen($_SESSION['login']) == 0) {
         $url = implode("-", $arr);
         $status = 1;
         $postid = intval($_GET['pid']);
+        $log_user = $_SESSION['log_user'];
+        $log_user_id = $_SESSION['log_user_id'] ;
+        $activity = "User edited with id = $postid";
+        $query = mysqli_query($con, "insert into activity_log(user_id,user,activity) values('$log_user_id', '$log_user', '$activity')");
         $query = mysqli_query($con, "update highlight set title='$posttitle',categoryId='$catid',description='$postdetails',highlightURL='$url',Active='$status' where id='$postid'");
         if ($query) {
             $msg = "Post updated ";

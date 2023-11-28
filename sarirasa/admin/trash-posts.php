@@ -11,6 +11,10 @@ else{
 if($_GET['action']='restore')
 {
 $postid=intval($_GET['pid']);
+$log_user = $_SESSION['log_user'];
+$log_user_id = $_SESSION['log_user_id'] ;
+$activity = "User restored highlight with id = $postid";
+$query = mysqli_query($con, "insert into activity_log(user_id,user,activity) values('$log_user_id', '$log_user', '$activity')");
 $query=mysqli_query($con,"update highlight set Active=1 where id='$postid'");
 if($query)
 {
@@ -26,6 +30,10 @@ $error="Something went wrong . Please try again.";
 if($_GET['presid'])
 {
     $id=intval($_GET['presid']);
+    $log_user = $_SESSION['log_user'];
+    $log_user_id = $_SESSION['log_user_id'] ;
+    $activity = "User DELETED highlight with id = $id";
+    $query = mysqli_query($con, "insert into activity_log(user_id,user,activity) values('$log_user_id', '$log_user', '$activity')");
     $query=mysqli_query($con,"delete from highlight where id='$id'");
     $delmsg="Post deleted forever";
 }

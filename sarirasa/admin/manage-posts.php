@@ -11,6 +11,10 @@ else{
 if($_GET['action']='del')
 {
 $postid=intval($_GET['pid']);
+$log_user = $_SESSION['log_user'];
+$log_user_id = $_SESSION['log_user_id'] ;
+$activity = "User removed highlight with id = $postid";
+$query = mysqli_query($con, "insert into activity_log(user_id,user,activity) values('$log_user_id', '$log_user', '$activity')");
 $query=mysqli_query($con,"update highlight set Active=0 where id='$postid'");
 if($query)
 {
