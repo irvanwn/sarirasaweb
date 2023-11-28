@@ -296,7 +296,7 @@ $conn->close();
 
         function closeMenu() {
           document.getElementById('menu__toggle').checked = false;
-        }
+        }Z
 
         function copyfnc() {
           var copyText = document.getElementById("myInput");
