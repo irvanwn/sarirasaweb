@@ -9,7 +9,10 @@
                 <li class="has_sub">
                     <a href="dashboard.php" class="waves-effect hovercolor"><i class="mdi mdi-view-dashboard"></i>
                         <span> Dashboard </span> </a>
-
+                </li>
+                <li class="has_sub">
+                    <a href="activity-log.php" class="waves-effect hovercolor"><i class="mdi mdi-walk"></i>
+                        <span> Activity Log </span> </a>
                 </li>
                 <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect hovercolor"><i
