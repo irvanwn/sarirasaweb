@@ -159,7 +159,7 @@ else{
 <tbody>
 
 <?php
-$query = mysqli_query($con, "select time, user_id, user, activity from activity_log order by time desc");
+$query = mysqli_query($con, "select time, user_id, user, activity from activity_log order by time desc LIMIT 100");
 $rowcount = mysqli_num_rows($query);
 
 if ($rowcount == 0) {
@@ -172,7 +172,7 @@ if ($rowcount == 0) {
     ?>
     <table id="customers">
         <tr>
-            <th>Time</th>
+            <th>Time Date</th>
             <th>User ID</th>
             <th>User</th>
             <th>Activity</th>

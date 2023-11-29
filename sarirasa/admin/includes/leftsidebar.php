@@ -10,16 +10,6 @@
                     <a href="dashboard.php" class="waves-effect hovercolor"><i class="mdi mdi-view-dashboard"></i>
                         <span> Dashboard </span> </a>
                 </li>
-                <?php
-                    if ($_SESSION['role'] == 1) {
-                ?>
-                    <li class="has_sub">
-                        <a href="activity-log.php" class="waves-effect hovercolor"><i class="mdi mdi-walk"></i>
-                            <span> Activity Log </span> </a>
-                    </li>
-                <?php
-                    }
-                ?>
                 <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect hovercolor"><i
                             class="mdi mdi-format-list-bulleted"></i> <span> Highlight </span> <span
@@ -41,6 +31,16 @@
                         <!-- <li><a href="dashboard.php">Contact us</a></li> -->
                     </ul>
                 </li>
+                <?php
+                    if ($_SESSION['role'] == 1) {
+                ?>
+                    <li class="has_sub">
+                        <a href="activity-log.php" class="waves-effect hovercolor"><i class="mdi mdi-walk"></i>
+                            <span> Activity Log </span> </a>
+                    </li>
+                <?php
+                    }
+                ?>
             </ul>
         </div>
         <!-- Sidebar -->
@@ -48,5 +48,12 @@
 
     </div>
     <!-- Sidebar -left -->
+<div style="height: 24px; display: flex; align-items: center;">
+    <a href="../#" style="text-decoration: none; display: flex; align-items: center;">
+        <i class="mdi mdi-help-circle-outline" style="font-size: 24px; margin:0 5px 0px 10px; "></i>
+        <span style="font-size: 16px; padding: 0px 0;">Help</span>
+    </a>
+</div>
+
 
 </div>
