@@ -12,6 +12,7 @@ else{
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
@@ -50,7 +51,50 @@ else{
         <script src="assets/js/modernizr.min.js"></script>
 
         <!-- Main CSS -->
-        <link href="css/styles3.css" rel="stylesheet" type="text/css" />
+        <style>
+            .redcolor{
+                color: #E00000 !important;
+            }
+
+            .hovercolor:hover, .hovercolor:focus, .hovercolor:active {
+                color: #FF0000 !important; /*   Red color, you can use your theme's red color code */
+            }
+
+            .bgblack{
+                background-color: rgb(65, 65, 65) !important;
+            }
+
+            .hovercolor{
+                background-color: rgb(65, 65, 65) !important;
+            }
+
+            .hovercolor:hover{
+                background-color: rgb(83, 83, 83) !important;
+            }
+
+            .hovercolor:active{
+                background-color: rgb(255, 255, 255) !important;
+            }
+            #customers{
+                width:80%; 
+            }
+            #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+                padding-top: 12px;  
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4A86E8;
+                color: white;
+            }
+        </style>
 
     </head>
 
@@ -115,38 +159,51 @@ else{
 <tbody>
 
 <?php
-$query=mysqli_query($con,"select time,user_id,user,activity from activity_log");
-$rowcount=mysqli_num_rows($query);
-if($rowcount==0)
-{
-?>
-<tr>
+$query = mysqli_query($con, "select time, user_id, user, activity from activity_log order by time desc");
+$rowcount = mysqli_num_rows($query);
 
-<td colspan="4" align="center"><h3 style="color:red">No record found</h3></td>
-<tr>
-<?php 
-} else {
-    while ($row = mysqli_fetch_array($query)) {
-        $deskPendek = substr(htmlentities($row['description']), 0, 60);
-?>
+if ($rowcount == 0) {
+    ?>
     <tr>
-        <td>
-            <p><?php echo htmlentities($row['time']); ?></p>
-        </td>
-        <td>
-            <p><?php echo htmlentities($row['user_id']); ?></p>
-        </td>
-        <td>
-            <p><?php echo htmlentities($row['user']); ?></p>
-        </td>
-        <td>
-            <p><?php echo htmlentities($row['activity']); ?></p>
-        </td>
+        <td colspan="4" align="center"><h3 style="color:red">No record found</h3></td>
     </tr>
-<?php 
-    } 
+    <?php
+} else {
+    ?>
+    <table id="customers">
+        <tr>
+            <th>Time</th>
+            <th>User ID</th>
+            <th>User</th>
+            <th>Activity</th>
+        </tr>
+        <?php
+        while ($row = mysqli_fetch_array($query)) {
+            $deskPendek = substr(htmlentities($row['description']), 0, 60);
+            ?>
+            <tr>
+                <td>
+                    <p><?php echo htmlentities($row['time']); ?></p>
+                </td>
+                <td>
+                    <p><?php echo htmlentities($row['user_id']); ?></p>
+                </td>
+                <td>
+                    <p><?php echo htmlentities($row['user']); ?></p>
+                </td>
+                <td>
+                    <p><?php echo htmlentities($row['activity']); ?></p>
+                </td>
+            </tr>
+        <?php
+        }
+        ?>
+    </table>
+<?php
 }
 ?>
+
+
 
 
 
