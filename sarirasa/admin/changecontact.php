@@ -120,18 +120,22 @@ if (strlen($_SESSION['login']) == 0) {
                     <form method="post" action="">
                         <div class="container">
                             <div class="box">
+                                <p style="padding:15px 35px 15px 5px; ">Instagram</p>
                                 <input type="text" placeholder="instagram" class="name" name="postinstagram"
                                     value="<?php echo htmlentities($row['instagram']); ?>">
                             </div>
                             <div class="box">
+                                <p style="padding:15px 65px 15px 5px; ">Email</p>
                                 <input type="text" placeholder="email" class="name" name="postemail"
                                     value="<?php echo htmlentities($row['email']); ?>">
                             </div>
                             <div class="box">
+                                <p style="padding:15px 30px 15px 5px; ">Nomor Wa</p>
                                 <input type="text" placeholder="nomor hp" class="name" name="postnomor"
                                     value="<?php echo htmlentities($row['telpon']); ?>">
                             </div>
                             <div class="box">
+                                <p style="padding:15px 0 15px 5px; ">No Telp Rumah</p>
                                 <input type="text" placeholder="nomor rumah" class="name" name="postnomorrumah"
                                     value="<?php echo htmlentities($row['telpon_rumah']); ?>">
                             </div>
