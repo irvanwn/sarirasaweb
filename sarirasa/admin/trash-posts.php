@@ -150,7 +150,7 @@ if($_GET['presid'])
 <tbody>
 
 <?php
-$query=mysqli_query($con,"select highlight.id as postid, highlight.highlightIMG, highlight.title as title, highlight.description from highlight where highlight.Active=0");
+$query=mysqli_query($con,"select highlight.id as postid, highlight.highlightIMG, highlight.title as title, highlight.description from highlight where highlight.Active=0 order by highlight.id desc");
 $rowcount=mysqli_num_rows($query);
 if($rowcount==0)
 {
