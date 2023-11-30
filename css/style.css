@@ -264,6 +264,7 @@ body {
 .container-icon{
     display: flex;
     justify-content: center;
+    scroll-padding-top: 50px;
 }
 .container-icon .grandparent{
     /* border: 1px solid black; */

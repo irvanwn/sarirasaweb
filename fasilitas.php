@@ -228,6 +228,8 @@
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselOleh" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselOleh" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselOleh" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselOleh" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             <!-- <button type="button" data-bs-target="#carouselOleh" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                         </div>
                         <div class="carousel-inner">
@@ -236,6 +238,12 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="img/oleh/oleh2.jpg" class="d-block custom-width ms-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/oleh/oleh3.jpg" class="d-block custom-width ms-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/oleh/oleh4.jpg" class="d-block custom-width ms-auto" alt="...">
                             </div>
                             <!-- <div class="carousel-item">
                                 <img src="img/oleh/oleh.jpg" class="d-block custom-width ms-auto" alt="...">
