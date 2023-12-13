@@ -49,7 +49,7 @@
     </div>
     <!-- Sidebar -left -->
 <div style="height: 24px; display: flex; align-items: center;">
-    <a href="../" style="text-decoration: none; display: flex; align-items: center;">
+    <a href="Manual-Book-Sarirasa-Administrator-Web.pdf" style="text-decoration: none; display: flex; align-items: center;">
         <i class="mdi mdi-help-circle-outline" style="font-size: 24px; margin:0 5px 0px 10px; "></i>
         <span style="font-size: 16px; padding: 0px 0;">Help</span>
     </a>
