@@ -292,46 +292,6 @@
                 <img src="img/IMG20230917114225.jpg" alt="">
             </div>
         </div> -->
-            <!-- <div class="bg-add">
-                <div class="fasilitas-1">
-                    <div class="child-wrapper">
-                        <div class="child-1">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                        <img src="img/IMG20230917114225.jpg" class="d-block custom-width ms-auto" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/IMG20230917114225.jpg" class="d-block custom-width ms-auto" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/IMG20230917114225.jpg" class="d-block custom-width ms-auto" alt="...">
-                                    </div>
-                            </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="child-2">
-                        <div class="wrapped">
-                            <h1>Fasilitas Mushola</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in mollitia vero necessitatibus iure! Eum delectus tenetur esse nisi voluptatibus porro commodi repellat, itaque, nemo perspiciatis quis corrupti. Sint, fugiat?</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
@@ -343,7 +303,6 @@
             <li><a href="https://www.instagram.com/rm_sarirasa_kendal/"><img src="img/iconset/ig.svg" alt="ig"></a></li>
             <li><a href="#"><img src="img/iconset/maill.svg" alt="mail"></a></li>
             <li><a href="https://wa.me/<?php echo isset($data2[0]["telpon"]) ? $data2[0]["telpon"] : "phone not found"; ?>"><img src="img/iconset/phone.svg" alt="phone"></a></li>
-            <!-- (0294)641888 -->
           </ul>
       </div>
       <div class="footer-bottom">

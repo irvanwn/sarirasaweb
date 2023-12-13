@@ -226,35 +226,6 @@ $conn->close();
           </div>
         </div>  
         <?php } ?>
-        <!-- <div class="single-card">
-          <div class="img-area">
-            <img src="img/2.jpg" alt="">
-            <div class="overlay">
-              <button class="add-to-cart">Add to Cart</button>
-              <button class="view-details">View Details</button>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Laptop</h3>
-            <p class="price">$599.99</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-      
-        <div class="single-card">
-          <div class="img-area">
-            <img src="img/3.jpg" alt="">
-            <div class="overlay">
-              <button class="add-to-cart">Add to Cart</button>
-              <button class="view-details">View Details</button>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Headphone</h3>
-            <p class="price">$29.99</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div> 
-        </div>-->
 
 
       </div>

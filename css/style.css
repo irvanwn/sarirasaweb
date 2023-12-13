@@ -242,29 +242,12 @@ body {
     background-color: #000000;
 
 }
-/*  */
 
-/* .container-dua .icon-set{
-    width: 1280px;
-    margin: 100px auto 0px auto;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.container-dua .icon-set img{
-    height: 60px;
-    margin-bottom: 10px;
-}
-.icon-email img{
-    height: 10px;
-} */
 .container-icon{
     display: flex;
     justify-content: center;
     scroll-padding-top: 50px;
+
 }
 .container-icon .grandparent{
     /* border: 1px solid black; */
